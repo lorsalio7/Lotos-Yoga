@@ -1,11 +1,35 @@
-<header class="absolute overflow-hidden inset-x-5 sm:inset-x-[30px] lg:inset-x-12 xxl:inset-x-[90px] inset-y-5 sm:inset-y-[30px] lg:inset-y-11 xxl:inset-y-[70px] pointer-events-none border-2 border-black">
+<header class="absolute z-10 overflow-hidden inset-x-5 sm:inset-x-[30px] lg:inset-x-12 xxl:inset-x-[90px] inset-y-5 sm:inset-y-[30px] lg:inset-y-11 xxl:inset-y-[70px] pointer-events-none border-2 border-black">
   <div class="grid grid-cols-header grid-rows-header h-full">
-    <span class="col-start-1 col-end-2 row-start-1 row-end-1">Menu button</span>
-    <span class="col-start-3 col-end-3 row-start-1 row-end-1">Page description</span>
-    <span class="col-start-4 col-end-4 row-start-1 row-end-1 justify-self-end">Phone number</span>
-    <span class="col-start-1 col-end-1 row-start-2 row-end-2 self-center">Logo</span>
-    <span class="col-start-4 col-end-4 row-start-2 row-end-2 self-center justify-self-end">Slide number</span>
-    <span class="col-start-1 col-end-1 row-start-3 row-end-3 self-end">Socials</span>
-    <span class="col-start-4 col-end-4 row-start-3 row-end-3 self-end justify-self-end">Next slide</span>
+    <button type="button" class="burger-button inline-flex items-center self-start justify-self-start h-6 pointer-events-auto col-start-1 col-end-2 row-start-1 row-end-1">
+      <span class="burger-button__icon w-6 h-6 relative">
+        <span class="burger-button__dot absolute top-2/4 left-0 block w-[2px] h-[2px] bg-black opacity-100 transition-opacity duration-200 ease-linear before:content-[''] before:absolute before:left-0 before:top-[-7px] before:block before:w-[2px] before:h-[2px] before:bg-black before:opacity-100 before:transition-opacity before:duration-200 before:ease-linear after:content-[''] after:absolute after:left-0 after:top-[7px] after:block after:w-[2px] after:h-[2px] after:bg-black after:opacity-100 after:transition-opacity after:duration-200 after:ease-linear"></span>
+        <span class="burger-button__line absolute top-2/4 left-1 block w-5 h-[2px] bg-tan-hide transition-[background-color] duration-200 ease-linear delay-200 before:content-[''] before:absolute before:top-[-7px] before:left-0 before:block before:w-5 before:h-[2px] before:bg-tan-hide before:transition-[top,transform] before:duration-[0.2s,0.2s] before:ease-[linear,linear] before:delay-[0.4s,0.2s] after:content-[''] after:absolute after:top-[7px] after:left-0 after:block after:w-3.5 after:h-[2px] after:bg-tan-hide after:transition-[width,top,transform] after:duration-[0.2s,0.2s,0.2s] after:ease-[linear,linear,linear] after:delay-[0.6s,0.4s,0.2s]"></span>
+      </span>
+      <span class="hidden burger-button__text text-[18px] ml-[15px] md:inline">Меню</span>
+    </button>
+    <span class="current-slide-title hidden col-start-3 col-end-3 row-start-1 row-end-1 text-lg before:content-['\25CF'] before:text-[7px] before:leading-[6px] before:inline before:align-middle before:mr-[10px] before:text-tan-hide xl:inline">Добро пожаловать</span>
+    <a href="#" class="hidden pointer-events-auto col-start-4 col-end-4 row-start-1 row-end-1 self-start justify-self-end text-lg md:inline-block">+7 (812) 345-56-97</a>
+    <a class="col-start-4 col-end-4 row-start-1 row-end-1 justify-self-end self-start md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-1 md:justify-self-center xl:col-start-1 xl:col-end-1 xl:row-start-2 xl:row-end-2 xl:justify-self-start xl:self-center">
+      <img src="img/logo.svg" class="w-10 h-[25px] block object-contain" alt="Logo">
+    </a>
+    <span class="flex flex-col justify-start self-end col-start-1 col-end-1 row-start-3 row-end-3 md:col-start-4 md:col-end-4 md:row-start-3 md:row-end-3 md:justify-self-end xl:justify-end xl:col-start-4 xl:col-end-4 xl:row-start-2 xl:row-end-2 xl:self-center">
+      <span class="current-slider-number text-[30px] inline-block bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text md:text-5xl xl:text-7xl">01</span>
+      <span class="self-start total-slider-number before:content-['\2212\00A0'] md:self-end text-[14px] inline-block bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text md:text-xl xl:text-3xl">09</span>
+    </span>
+    <ul class="flex col-start-2 col-end-4 row-start-3 row-end-3 justify-self-center self-end xl:col-start-1 xl:col-end-1 xl:row-start-3 xl:row-end-3 xl:self-end xl:justify-self-start">
+      <li class="mr-[30px]">
+        <a href="#" class="pointer-events-auto uppercase text-[10px]">vk</a>
+      </li>
+      <li class="mr-[30px]">
+        <a href="#" class="pointer-events-auto uppercase text-[10px]">ok</a>
+      </li>
+      <li>
+        <a href="#" class="pointer-events-auto uppercase text-[10px]">tg</a>
+      </li>
+    </ul>
+    <button type="button" class="flex items-center col-start-4 col-end-4 row-start-3 row-end-3 self-end justify-self-end pointer-events-auto md:col-start-1 md:col-end-1 md:row-start-3 md:row-end-3 md:justify-self-start xl:col-start-4 xl:col-end-4 xl:row-start-3 xl:row-end-3 xl:justify-self-end">
+      <span class="hidden next-prev-slider-title mr-[22px] xl:inline">Направления и классы</span>
+      <svg width="20" height="20" fill="none" class="w-[30px] h-[30px]" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><circle cx="15" cy="15" r="15" fill="url(#b)"/><path class="group" d="m15 19.01-3-6.02h6.01L15 19.01z" fill="#fff"/></g><defs><linearGradient id="b" x1="15" y1="0" x2="15" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#FC65A1"/><stop offset="1" stop-color="#F78D69"/></linearGradient><clipPath id="a"><path fill="#fff" d="M0 0h30v30H0z"/></clipPath></defs></svg>
+    </button>
   </div>
 </header>

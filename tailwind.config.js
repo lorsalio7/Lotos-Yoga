@@ -27,6 +27,8 @@ module.exports = {
       "white": "#fff",
       "blue": "#0000ff",
       "dawn-pink": "#faf5f4",
+      "tan-hide": "#f78e69",
+      "hot-pink": "#fc65a1",
       transparent: "transparent"
     },
     extend: {
@@ -38,6 +40,14 @@ module.exports = {
       },
       gridTemplateColumns: {
         header: "1fr 1fr 1fr 1fr",
+      },
+      transitionProperty: {
+        "top":  "top",
+        "transform": "transform",
+        "width": "width"
+      },
+      transitionTimingFunction: {
+        "linear": "linear",
       }
     },
   },
