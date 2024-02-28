@@ -13,13 +13,38 @@
   <div class="h-full w-full">
     <header class="absolute z-10 overflow-hidden inset-x-5 sm:inset-x-[30px] lg:inset-x-12 xxl:inset-x-[90px] inset-y-5 sm:inset-y-[30px] lg:inset-y-11 xxl:inset-y-[70px] pointer-events-none border-2 border-black">
   <div class="grid grid-cols-header grid-rows-header h-full">
-    <button type="button" class="burger-button inline-flex items-center self-start justify-self-start h-6 pointer-events-auto col-start-1 col-end-2 row-start-1 row-end-1">
+    <button type="button" class="burger-button inline-flex items-center self-start justify-self-start h-6 pointer-events-auto col-start-1 col-end-2 row-start-1 row-end-1 z-20">
       <span class="burger-button__icon w-6 h-6 relative">
         <span class="burger-button__dot absolute top-2/4 left-0 block w-[2px] h-[2px] bg-black opacity-100 transition-opacity duration-200 ease-linear before:content-[''] before:absolute before:left-0 before:top-[-7px] before:block before:w-[2px] before:h-[2px] before:bg-black before:opacity-100 before:transition-opacity before:duration-200 before:ease-linear after:content-[''] after:absolute after:left-0 after:top-[7px] after:block after:w-[2px] after:h-[2px] after:bg-black after:opacity-100 after:transition-opacity after:duration-200 after:ease-linear"></span>
         <span class="burger-button__line absolute top-2/4 left-1 block w-5 h-[2px] bg-tan-hide transition-[background-color] duration-200 ease-linear delay-200 before:content-[''] before:absolute before:top-[-7px] before:left-0 before:block before:w-5 before:h-[2px] before:bg-tan-hide before:transition-[top,transform] before:duration-[0.2s,0.2s] before:ease-[linear,linear] before:delay-[0.4s,0.2s] after:content-[''] after:absolute after:top-[7px] after:left-0 after:block after:w-3.5 after:h-[2px] after:bg-tan-hide after:transition-[width,top,transform] after:duration-[0.2s,0.2s,0.2s] after:ease-[linear,linear,linear] after:delay-[0.6s,0.4s,0.2s]"></span>
       </span>
       <span class="hidden burger-button__text text-[18px] ml-[15px] md:inline">Меню</span>
     </button>
+    <nav class="site-navigation pointer-events-auto fixed inset-x-0 -translate-y-full inset-y-0 z-10 h-full overflow-y-auto bg-dawn-pink-90 p-7 transition-transform duration-500 linear">
+      <ul class="flex flex-col pointer-events-auto justify-center items-center pl-8 pt-9 pb-9 pr-8 min-h-full overflow-y-auto">
+        <li class="mb-10 xs:mb-[50px]">
+          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7">Главная</a>
+        </li>
+        <li class="mb-10 xs:mb-[50px]">
+          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Направления</a>
+        </li>
+        <li class="mb-10 xs:mb-[50px]">
+          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Преподаватели</a>
+        </li>
+        <li class="mb-10 xs:mb-[50px]">
+          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Абонементы</a>
+        </li>
+        <li class="mb-10 xs:mb-[50px]">
+          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Расписание</a>
+        </li>
+        <li class="mb-10 xs:mb-[50px]">
+          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Отзывы</a>
+        </li>
+        <li>
+          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Контакты</a>
+        </li>
+      </ul>
+    </nav>
     <span class="current-slide-title hidden col-start-3 col-end-3 row-start-1 row-end-1 text-lg before:content-['\25CF'] before:text-[7px] before:leading-[6px] before:inline before:align-middle before:mr-[10px] before:text-tan-hide xl:inline">Добро пожаловать</span>
     <a href="#" class="hidden pointer-events-auto col-start-4 col-end-4 row-start-1 row-end-1 self-start justify-self-end text-lg md:inline-block">+7 (812) 345-56-97</a>
     <a class="col-start-4 col-end-4 row-start-1 row-end-1 justify-self-end self-start md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-1 md:justify-self-center xl:col-start-1 xl:col-end-1 xl:row-start-2 xl:row-end-2 xl:justify-self-start xl:self-center">

@@ -7,6 +7,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
+      "xs": { "min": "375px" },
       "sm": { "min": "425px" },
       "md": { "min": "768px" },
       "lg": { "min": "1024px" },
@@ -24,9 +25,11 @@ module.exports = {
     },
     colors: {
       "black": "#000",
+      "black-50": "#00000080",
       "white": "#fff",
       "blue": "#0000ff",
       "dawn-pink": "#faf5f4",
+      "dawn-pink-90": "#faf5f4e6",
       "tan-hide": "#f78e69",
       "hot-pink": "#fc65a1",
       transparent: "transparent"
