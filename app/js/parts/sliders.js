@@ -8,6 +8,8 @@ let mainSlider = new Splide('.main-slider', {
 
 mainSlider.mount();
 
+console.log(mainSlider);
+
 let nextPrevSliderButton = document.querySelector(".next-slide-button");
 let nextPrevSliderButtonIcon = nextPrevSliderButton.querySelector(".next-slide-button__icon");
 let nextPrevSliderButtonIconClasses = Array.from(nextPrevSliderButtonIcon.classList).join(" ");
@@ -17,6 +19,18 @@ let currentSliderNumber = document.querySelector(".current-slider-number");
 let totalSliderNumber = document.querySelector(".total-slider-number");
 let currentSlideTitle = document.querySelector(".current-slide-title");
 let prevNextSlideTitle = document.querySelector(".next-prev-slider-title");
+let siteMenuLinks = document.querySelectorAll(".site-menu-link");
+
+siteMenuLinks.forEach(link => {
+  link.addEventListener("click", goToSlide);
+});
+
+function goToSlide(e) {
+  e.preventDefault();
+  let target = e.target;
+  mainSlider.go((Number(target.dataset.linkSlide) - 1));
+  closeSiteMenu();
+}
 
 let access = true;
 

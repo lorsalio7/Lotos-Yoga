@@ -23,25 +23,25 @@
     <nav class="site-navigation pointer-events-auto fixed inset-x-0 -translate-y-full inset-y-0 z-10 h-full overflow-y-auto bg-dawn-pink-90 p-7 transition-transform duration-500 linear">
       <ul class="flex flex-col pointer-events-auto justify-center items-center pl-8 pt-9 pb-9 pr-8 min-h-full overflow-y-auto">
         <li class="mb-10 xs:mb-[50px]">
-          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7">Главная</a>
+          <a href="#" data-link-slide="1" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7">Главная</a>
         </li>
         <li class="mb-10 xs:mb-[50px]">
-          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Направления</a>
+          <a href="#" data-link-slide="2" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Направления</a>
         </li>
         <li class="mb-10 xs:mb-[50px]">
-          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Преподаватели</a>
+          <a href="#" data-link-slide="4" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Преподаватели</a>
         </li>
         <li class="mb-10 xs:mb-[50px]">
-          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Абонементы</a>
+          <a href="#" data-link-slide="5" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Абонементы</a>
         </li>
         <li class="mb-10 xs:mb-[50px]">
-          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Расписание</a>
+          <a href="#" data-link-slide="6" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Расписание</a>
         </li>
         <li class="mb-10 xs:mb-[50px]">
-          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Отзывы</a>
+          <a href="#" data-link-slide="7" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Отзывы</a>
         </li>
         <li>
-          <a href="#" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Контакты</a>
+          <a href="#" data-link-slide="9" class="site-menu-link pointer-events-auto text-[18px] xs:text-[24px] leading-7 text-black-50">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -75,11 +75,11 @@
     <div class="splide main-slider">
       <div class="splide__track">
         <ul class="splide__list">
-          <li data-slide-title="Добро пожаловать" class="splide__slide">
+          <li data-slide-title="Добро пожаловать" data-slide-index="1" class="splide__slide">
 
 </li>
 
-          <li data-slide-title="Направления и классы" class="splide__slide">
+          <li data-slide-title="Направления и классы" data-slide-index="2" class="splide__slide">
   <div class=""></div>
 </li>
 
@@ -87,19 +87,19 @@
   <div class=""></div>
 </li>
 
-          <li data-slide-title="Преподаватели" class="splide__slide">
+          <li data-slide-title="Преподаватели" data-slide-index="4" class="splide__slide">
   <div class=""></div>
 </li>
 
-          <li data-slide-title="Абонементы" class="splide__slide">
+          <li data-slide-title="Абонементы" data-slide-index="5" class="splide__slide">
   <div class=""></div>
 </li>
 
-          <li data-slide-title="Расписание" class="splide__slide">
+          <li data-slide-title="Расписание" data-slide-index="6" class="splide__slide">
   <div class=""></div>
 </li>
 
-          <li data-slide-title="Отзывы" class="splide__slide">
+          <li data-slide-title="Отзывы" data-slide-index="7" class="splide__slide">
   <div class=""></div>
 </li>
 
@@ -107,7 +107,7 @@
   <div class=""></div>
 </li>
 
-          <li data-slide-title="Контакты" class="splide__slide">
+          <li data-slide-title="Контакты" data-slide-index="9" class="splide__slide">
   <div class=""></div>
 </li>
 
@@ -116,6 +116,7 @@
     </div>
   </div>
   <script src="libs/js/splide.min.js" defer></script>
+  <!-- <script src="libs/js/splide-extension-url-hash.min.js" defer></script> -->
   <script src="js/script.js" defer></script>
 </body>
 </html>
