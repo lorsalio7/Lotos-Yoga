@@ -8,7 +8,6 @@ let mainSlider = new Splide('.main-slider', {
   arrows: false
 });
 mainSlider.mount();
-console.log(mainSlider);
 let nextPrevSliderButton = document.querySelector(".next-slide-button");
 let nextPrevSliderButtonIcon = nextPrevSliderButton.querySelector(".next-slide-button__icon");
 let nextPrevSliderButtonIconClasses = Array.from(nextPrevSliderButtonIcon.classList).join(" ");
@@ -19,6 +18,15 @@ let totalSliderNumber = document.querySelector(".total-slider-number");
 let currentSlideTitle = document.querySelector(".current-slide-title");
 let prevNextSlideTitle = document.querySelector(".next-prev-slider-title");
 let siteMenuLinks = document.querySelectorAll(".site-menu-link");
+let siteMenuLinksActive = Array.from(siteMenuLinks[0].classList).join(" ");
+function activateMenuLink(slideIndex, links, itemClass) {
+  links.forEach(element => {
+    element.classList.add(itemClass);
+    if (Number(element.dataset.linkSlide) - 1 === slideIndex) {
+      element.classList.remove(itemClass);
+    }
+  });
+}
 siteMenuLinks.forEach(link => {
   link.addEventListener("click", goToSlide);
 });
@@ -67,6 +75,7 @@ mainSlider.on("active", el => {
     let prevSlideTitle = prevSlide.dataset.slideTitle;
     prevNextSlideTitle.textContent = prevSlideTitle;
   }
+  activateMenuLink(el.index, siteMenuLinks, "text-black-50");
 });
 const burgerButton = document.querySelector(".burger-button");
 const siteMenu = document.querySelector(".site-navigation");
