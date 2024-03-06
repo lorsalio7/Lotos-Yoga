@@ -978,6 +978,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .delay-200 {
   transition-delay: 200ms;
 }
@@ -1383,6 +1388,10 @@ video {
 }
 .hover\:bg-none:hover {
   background-image: none;
+}
+.hover\:text-tan-hide:hover {
+  --tw-text-opacity: 1;
+  color: rgb(247 142 105 / var(--tw-text-opacity));
 }
 .hover\:before\:opacity-0:hover::before {
   content: var(--tw-content);

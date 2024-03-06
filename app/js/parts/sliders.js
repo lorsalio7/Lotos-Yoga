@@ -11,8 +11,6 @@ mainSlider.mount();
 
 let nextPrevSliderButton = document.querySelector(".next-slide-button");
 let nextPrevSliderButtonIcon = nextPrevSliderButton.querySelector(".next-slide-button__icon svg");
-// let nextPrevSliderButtonIconClasses = Array.from(nextPrevSliderButtonIcon.classList).join(" ");
-// let nextPrevSliderButtonIconRotateClasses = "next-slide-button__icon w-[30px] h-[30px] relative rounded-[50%] bg-gradient-to-b from-hot-pink from-0% to-tan-hide to-100% before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-0 before:h-0 before:border-t-[6px] before:border-r-[3px] before:border-b-0 before:border-l-[3px] before:border-t-white before:border-r-transparent before:border-b-transparent before:border-l-transparent before:-translate-x-1/2 before:-translate-y-1/2 before:transition-[transform] before:rotate-180 before:duration-500 before:linear";
 let firstSlide = document.querySelectorAll(".main-slider .splide__slide")[0];
 let currentSliderNumber = document.querySelector(".current-slider-number");
 let totalSliderNumber = document.querySelector(".total-slider-number");
@@ -83,13 +81,9 @@ mainSlider.on("active", (el) => {
   if(nextSlide) {
     let nextSlideTitle = nextSlide.dataset.slideTitle;
     prevNextSlideTitle.textContent = nextSlideTitle;
-    // сюда обычная стрелка
     nextPrevSliderButtonIcon.setAttribute("transform", "rotate(0 0 0)");
-    // nextPrevSliderButtonIcon.className = nextPrevSliderButtonIconClasses;
   } else {
-    // сюда повернутая вверх
     nextPrevSliderButtonIcon.setAttribute("transform", "rotate(-180 0 0)");
-    // nextPrevSliderButtonIcon.className = nextPrevSliderButtonIconRotateClasses;
     let prevSlide = el.slide.previousElementSibling;
     let prevSlideTitle = prevSlide.dataset.slideTitle;
     prevNextSlideTitle.textContent = prevSlideTitle;
