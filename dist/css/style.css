@@ -717,6 +717,9 @@ video {
 .origin-bottom {
   transform-origin: bottom;
 }
+.origin-center {
+  transform-origin: center;
+}
 .-translate-y-full {
   --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -970,6 +973,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-\[transform\] {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .delay-200 {
   transition-delay: 200ms;
 }
@@ -984,6 +992,12 @@ video {
 }
 .\[writing-mode\:vertical-lr\] {
   writing-mode: vertical-lr;
+}
+.\[--transform-svg-icon\:0\] {
+  --transform-svg-icon: 0;
+}
+.\[transform\:rotate\(-180_0_0\)\] {
+  transform: rotate(-180 0 0);
 }
 @font-face {
   src: local("Inter ExtraLight"), local("Inter-ExtraLight"), url("../fonts/Inter-ExtraLight.woff2") format("woff2");
@@ -1068,6 +1082,10 @@ video {
   content: var(--tw-content);
   height: 40px;
 }
+.before\:h-\[30px\]::before {
+  content: var(--tw-content);
+  height: 30px;
+}
 .before\:w-0::before {
   content: var(--tw-content);
   width: 0px;
@@ -1083,6 +1101,10 @@ video {
 .before\:w-\[40px\]::before {
   content: var(--tw-content);
   width: 40px;
+}
+.before\:w-\[30px\]::before {
+  content: var(--tw-content);
+  width: 30px;
 }
 .before\:-translate-x-1\/2::before {
   content: var(--tw-content);
@@ -1368,6 +1390,12 @@ video {
 }
 .group:hover .group-hover\:fill-\[url\(\#theme-gradient\)\] {
   fill: url(#theme-gradient);
+}
+.group:hover .group-hover\:fill-\[url\(\#first-gradient\)\] {
+  fill: url(#first-gradient);
+}
+.group:hover .group-hover\:\[transform\:rotate\(-180_0_0\)\] {
+  transform: rotate(-180 0 0);
 }
 @media (min-width: 375px) {
 
