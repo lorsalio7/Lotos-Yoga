@@ -18,4 +18,13 @@
   <symbol id="triangle-ic" viewBox="0 0 24 24">
     <path d="m15 19.01-3-6.02h6.01L15 19.01Z" />
   </symbol>
+
+  <symbol id="plus-ic" viewBox="0 0 16 16">
+    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" />
+  </symbol>
+
+  <!-- <linearGradient id="theme-gradient" x1="15" y1="0" x2="15" y2="30" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FC65A1"/>
+    <stop offset="1" stop-color="#F78D69"/>
+  </linearGradient> -->
 </svg>
