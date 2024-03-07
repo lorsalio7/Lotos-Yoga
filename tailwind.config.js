@@ -7,6 +7,8 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
+      "tallxs": { "raw": "(min-height: 570px)"},
+      "tallsm": { "raw": "(min-height: 799px)"},
       "xs": { "min": "375px" },
       "sm": { "min": "425px" },
       "md": { "min": "768px" },

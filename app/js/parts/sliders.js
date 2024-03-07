@@ -3,7 +3,8 @@ let mainSlider = new Splide('.main-slider', {
   height   : '100vh',
   wheel    : true,
   speed    : 500,
-  arrows   : false
+  arrows   : false,
+  pagination: false
 });
 
 mainSlider.mount();

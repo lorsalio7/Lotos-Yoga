@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="libs/css/splide.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="p-0 h-full w-full bg-dawn-pink font-sans">
-  <div class="h-full w-full">
-    <header class="absolute z-10 overflow-hidden inset-x-5 sm:inset-x-[30px] lg:inset-x-12 xxl:inset-x-[90px] inset-y-5 sm:inset-y-[30px] lg:inset-y-11 xxl:inset-y-[70px] pointer-events-none border-2 border-black">
+<body class="p-0 w-full bg-dawn-pink font-sans">
+  <div class="w-full">
+    <header class="fixed z-10 overflow-hidden inset-x-5 sm:inset-x-[30px] lg:inset-x-12 xxl:inset-x-[90px] inset-y-5 sm:inset-y-[30px] lg:inset-y-11 xxl:inset-y-[70px] pointer-events-none border-2 border-black">
   <div class="grid grid-cols-header grid-rows-header h-full">
     <button type="button" class="burger-button inline-flex items-center self-start justify-self-start h-6 pointer-events-auto col-start-1 col-end-2 row-start-1 row-end-1 z-20">
       <span class="burger-button__icon w-6 h-6 relative">
@@ -84,18 +84,18 @@
       <div class="splide__track">
         <ul class="splide__list">
           <li data-slide-title="Добро пожаловать" data-slide-index="1" class="splide__slide">
-  <div class="hero flex justify-center pl-5 pr-5 xxl:pl-[250px] xxl:pr-[250px]">
-    <div class="flex flex-col items-center max-w-mw h-screen justify-center pt-18 pb-18 xs:pt-28 xs:pb-28">
-      <div class="hero__image-wrapper mb-4 xs:mb-9 xxl:basis-[calc(100%/2)] xxl:h-full xxl:pr-[111px]">
-        <img src="https://placehold.co/569x851/BF7AFF/FFFFFF.png" class="block w-[120px] xs:w-[200px] h-auto xxl:w-full xxl:h-full object-contain" width="569" height="851" alt="Hero image">
+  <div class="hero flex justify-center [height:calc(var(--vh)*100)] pl-5 pr-5 xxl:pl-[250px] xxl:pr-[250px]">
+    <div class="flex flex-col grow shrink items-center max-w-mw justify-center pt-18 pb-18 tallsm:pt-24 tallsm:pb-24">
+      <div class="hero__image-wrapper mb-4 xs:mb-5 xxl:basis-[calc(100%/2)] xxl:h-full xxl:pr-[111px]">
+        <img src="https://placehold.co/569x851/BF7AFF/FFFFFF.png" class="tallsm:w-[240px] block w-[120px] h-auto xxl:w-full xxl:h-full object-contain tallxs:w-[190px]" width="569" height="851" alt="Hero image">
       </div>
       <div class="hero__text-content xxl:basis-[calc(100%/2)] xxl:shrink-[2]">
         <h1 class="flex items-baseline mb-2">
-          <span class="[writing-mode:vertical-lr] bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text max-w-[16px] text-[9px] -rotate-180 xs:text-base">Центр йоги</span>
-          <span class="-tracking-widest text-[60px] -indent-[5px] pr-1 inline-block bg-gradient-to-t from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text xs:text-[130px] leading-[1]">Lotos</span>
+          <span class="[writing-mode:vertical-lr] bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text max-w-[16px] text-[9px] -rotate-180 xs:text-base xs:leading-[1]">Центр йоги</span>
+          <span class="-tracking-widest text-[60px] -indent-[5px] pr-1 inline-block bg-gradient-to-t from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text xs:text-[130px] xs:-indent-[10px] xs:pr-2 leading-[1]">Lotos</span>
         </h1>
         <span class="flex items-center">
-          <button type="button" class="group relative shrink-0 rounded-full flex items-center justify-center w-10 h-10 xs:w-[50px] xs:h-[50px] bg-white mr-[10px] hover:bg-none before:content-[''] before:w-[40px] before:h-[40px] before:rounded-full before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover:before:opacity-0">
+          <button type="button" class="group relative shrink-0 rounded-full flex items-center justify-center w-10 h-10 xs:w-[50px] xs:h-[50px] bg-white mr-[10px] hover:bg-none before:content-[''] before:w-[40px] before:h-[40px] before:rounded-full before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover:before:opacity-0 xs:before:w-[50px] xs:before:h-[50px]">
             <svg width="16" height="16" class="absolut z-10 group-hover:fill-[url(#first-gradient)] fill-white">
               <linearGradient id="first-gradient" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
                 <stop stop-color="#E58BB2"/>
@@ -104,7 +104,7 @@
               <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" />
             </svg>
           </button>
-          <span class="text-[14px]">Приглашаем вас и ваших друзей
+          <span class="text-[14px] xs:text-base">Приглашаем вас и ваших друзей
             на бесплатное пробное занятие</span>
         </span>
       </div>
