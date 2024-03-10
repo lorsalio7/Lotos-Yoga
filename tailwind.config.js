@@ -7,14 +7,19 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      "tallxs": { "raw": "(min-height: 570px)"},
-      "tallsm": { "raw": "(min-height: 799px)"},
       "xs": { "min": "375px" },
       "sm": { "min": "425px" },
       "md": { "min": "768px" },
       "lg": { "min": "1024px" },
       "xl": { "min": "1280px" },
       "xxl": { "min": "1536px" },
+      "xxxl": { "min": "1920px" },
+      "tallxxs": { "raw": "(min-height: 320px)"},
+      "tallxs": { "raw": "(min-height: 375px)"},
+      "tallsm": { "raw": "(min-height: 425px)"},
+      "tallmd": { "raw": "(min-height: 768px)"},
+      "talllg": { "raw": "(min-height: 1024px)"},
+      "tallxl": { "raw": "(min-height: 1280px)"},
     },
     container: {
       center: false,
