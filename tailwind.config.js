@@ -7,6 +7,14 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
+      "tallxxs": { "raw": "(min-height: 320px)"},
+      "tallxs": { "raw": "(min-height: 375px)"},
+      "tallsm": { "raw": "(min-height: 425px)"},
+      "tallmd": { "raw": "(min-height: 768px)"},
+      "talllg": { "raw": "(min-height: 1024px)"},
+      "tallxl": { "raw": "(min-height: 1280px)"},
+      "xss-min-h-740": { "raw": "(min-width: 360px) and (min-height: 740px)"},
+      "xxs": { "min": "320px" },
       "xs": { "min": "375px" },
       "sm": { "min": "425px" },
       "md": { "min": "768px" },
@@ -14,12 +22,6 @@ module.exports = {
       "xl": { "min": "1280px" },
       "xxl": { "min": "1536px" },
       "xxxl": { "min": "1920px" },
-      "tallxxs": { "raw": "(min-height: 320px)"},
-      "tallxs": { "raw": "(min-height: 375px)"},
-      "tallsm": { "raw": "(min-height: 425px)"},
-      "tallmd": { "raw": "(min-height: 768px)"},
-      "talllg": { "raw": "(min-height: 1024px)"},
-      "tallxl": { "raw": "(min-height: 1280px)"},
     },
     container: {
       center: false,
@@ -33,6 +35,7 @@ module.exports = {
     colors: {
       "black": "#000",
       "black-50": "#00000080",
+      "black-10": "#0000001a",
       "white": "#fff",
       "blue": "#0000ff",
       "dawn-pink": "#faf5f4",
@@ -43,7 +46,7 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        mw: "1420px",
+        mw: "1650px",
       },
       gridTemplateRows: {
         "header": "auto auto auto",
@@ -58,6 +61,12 @@ module.exports = {
       },
       transitionTimingFunction: {
         "linear": "linear",
+      },
+      backgroundImage: {
+        "gradient-to-45": "linear-gradient(45deg, var(--tw-gradient-stops))",
+      },
+      boxShadow: {
+        button: "0 0 50px #0000001a",
       }
     },
   },

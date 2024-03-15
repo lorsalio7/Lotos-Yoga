@@ -11,7 +11,7 @@
 </head>
 <body class="p-0 w-full bg-dawn-pink font-sans">
   <div class="w-full">
-    <header class="fixed z-10 overflow-hidden inset-x-5 sm:inset-x-[30px] lg:inset-x-12 xxl:inset-x-[90px] inset-y-5 sm:inset-y-[30px] lg:inset-y-11 xxl:inset-y-[70px] pointer-events-none border-2 border-black">
+    <header class="fixed z-10 overflow-hidden inset-x-5 sm:inset-x-[30px] lg:inset-x-12 xxl:inset-x-[90px] inset-y-5 sm:inset-y-[30px] lg:inset-y-11 xxl:inset-y-[70px] pointer-events-none border-2 border-black-10">
   <div class="grid grid-cols-header grid-rows-header h-full">
     <button type="button" class="burger-button inline-flex items-center self-start justify-self-start h-6 pointer-events-auto col-start-1 col-end-2 row-start-1 row-end-1 z-20">
       <span class="burger-button__icon w-6 h-6 relative">
@@ -52,7 +52,7 @@
     </a>
     <span class="flex flex-col justify-start self-end col-start-1 col-end-1 row-start-3 row-end-3 md:col-start-4 md:col-end-4 md:row-start-3 md:row-end-3 md:justify-self-end xl:justify-end xl:col-start-4 xl:col-end-4 xl:row-start-2 xl:row-end-2 xl:self-center">
       <span class="current-slider-number text-[30px] inline-block bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text md:text-7xl leading-none">01</span>
-      <span class="self-start total-slider-number before:content-['\2212\00A0'] md:self-end text-[14px] inline-block bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text md:text-3xl">09</span>
+      <span class="self-start total-slider-number before:content-['\2013\00A0'] md:self-end text-[14px] inline-block bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text md:text-3xl">09</span>
     </span>
     <ul class="flex col-start-2 col-end-4 row-start-3 row-end-3 justify-self-center self-end xl:col-start-1 xl:col-end-1 xl:row-start-3 xl:row-end-3 xl:self-end xl:justify-self-start">
       <li class="mr-[30px]">
@@ -68,7 +68,7 @@
     <button type="button" class="next-slide-button group flex items-center col-start-4 col-end-4 row-start-3 row-end-3 self-end justify-self-end pointer-events-auto md:col-start-1 md:col-end-1 md:row-start-3 md:row-end-3 md:justify-self-start xl:col-start-4 xl:col-end-4 xl:row-start-3 xl:row-end-3 xl:justify-self-end">
       <span class="hidden group next-prev-slider-title mr-[22px] xl:inline">Направления и классы</span>
       <span class="next-slide-button__icon flex items-center justify-center w-[30px] h-[30px] relative rounded-full bg-white before:content-[''] before:absolute before:w-[30px] before:h-[30px] before:rounded-full before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear group-hover:before:opacity-0">
-        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" transform="rotate(0 0 0)" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear ">
+        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" transform="rotate(0 0 0)" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear">
           <linearGradient id="theme-gradient" x1="3" y1="0" x2="3" y2="6" gradientUnits="userSpaceOnUse">
             <stop stop-color="#FC65A1"/>
             <stop offset="1" stop-color="#F78D69"/>
@@ -83,37 +83,89 @@
     <div class="splide main-slider">
       <div class="splide__track">
         <ul class="splide__list">
-          <li data-slide-title="Добро пожаловать" data-slide-index="1" class="splide__slide">
-  <div class="hero flex justify-center [height:calc(var(--vh)*100)] px-5 pt-6 pb-6 sm:px-[30px] lg:px-16 xl:px-[170px] xxl:px-[250px] xxl:pt-18 xxl:pb-18 tallsm:py-24">
-    <div class="flex flex-col items-center max-w-mw justify-center md:flex-row-reverse md:justify-end lg:flex-row">
-      <div class="hero__image-wrapper mb-4 xs:mb-5 md:shrink-0 md:mb-0 md:pl-10 md:-mr-[107px] lg:mr-0 lg:pl-0 lg:pr-10 lg:basis-[50%] xxl:pr-[111px]">
-        <img src="https://placehold.co/569x851/BF7AFF/FFFFFF.png" class="block w-[120px] h-auto xs:h-[300px] xs:w-[201px] xs:tallmd:h-[329px] xs:tallmd:w-[220px] sm:h-[370px] sm:w-[247px] sm:tallmd:w-[250px] sm:tallmd:h-[374px] tallsm:w-[180px] tallsm:h-[269px] md:scale-[-1,1] md:tallmd:h-[590px] md:tallmd:w-[395px] tallmd:h-[590px] tallmd:w-[395px] landscape:tallsm:w-[220px] landscape:tallsm:h-[329px] lg:scale-[1,1] lg:ml-auto object-contain landscape:tallmd:w-[400px] landscape:tallmd:h-[598px] tallxs:w-[190px] xxxl:w-[569px] xxxl:h-[851px]" width="569" height="851" alt="Hero image">
+          
+          <li data-slide-title="Направления и классы" data-slide-index="2" class="splide__slide">
+  <div class="directions flex justify-center [height:calc(var(--vh)*100)] px-5 pt-6 pb-6 sm:px-[30px] lg:px-16 xl:px-[170px] xxl:px-[250px] xxl:pt-18 xxl:pb-18 tallsm:py-24 xxxl:talllg:px-[130px] xxxl:w-full">
+    <div class="flex items-center shrink grow max-w-mw justify-center w-full md:flex-row-reverse md:items-start md:pt-[60px] md:tallsm:pt-0 lg:flex-row lg:tallxl:pt-0 lg:tallxl:items-center md:tallxl:pt-0 md:tallsm:items-center md:tallxl:items-center lg:tallsm:pt-0 lg:tallsm:items-center xl:tallmd:items-center">
+      <div class="col hidden md:ml-[35px] md:shrink md:flex md:flex-col md:w-[33.38%] lg:tallxl:ml-0 lg:tallxl:mr-[55px] lg:tallsm:flex lg:tallsm:ml-0 lg:tallsm:mr-[35px] lg:tallsm:w-auto xl:tallmd:flex xl:tallmd:mr-[55px] xxl:tallmd:flex-row xxl:tallmd:w-6/12 xxl:tallmd:mr-[28px] xxxl:talllg:items-start xxxl:talllg:mr-0 xxxl:talllg:pr-[105px] xxxl:talllg:shrink-0">
+        <div class="relative flex justify-end md:grow-0 md:shrink md:w-full xl:tallmd:hidden md:talllg:flex md:tallsm:hidden lg:tallsm:flex xxl:tallmd:flex xxl:tallmd:mr-[28px] xxxl:talllg:mt-[120px] xxxl:talllg:mr-[80px] xxxl:talllg:grow-1">
+          <span class="direction-slider-pagination-runner inline-block relative self-start text-nowrap text-[18px] bg-gradient-to-t from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text mb-[20px] transition-top duration-200 ease-linear lg:tallsm:hidden xxl:tallmd:inline-block xxxl:talllg:shrink-0">Yoga &mdash;</span>
+          <div class="direction-slider-pagination flex flex-col items-start px-[9px] md:grow-0 md:shrink lg:tallsm:hidden xxl:tallmd:flex xxxl:talllg:shrink-0"></div>
+        </div>
+        <img src="https://placehold.co/372x873/BF7AFF/FFFFFF.png" class="block object-contain md:self-end md:w-[213px] md:h-[500px] md:tallsm:w-[180px] md:tallsm:h-[422px] lg:tallsm:w-[160px] lg:tallsm:h-[375px] lg:tallxl:self-center lg:tallsm:block xl:tallmd:w-[220px] xl:tallmd:h-[516px] xxxl:talllg:w-[372px] xxxl:talllg:h-[873px]" alt="">
       </div>
-      <div class="hero__text-content shrink-0 md:basis-[398px] lg:basis-[50%]">
-        <h1 class="flex items-baseline mb-2">
-          <span class="[writing-mode:vertical-lr] bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text max-w-[16px] text-[9px] -rotate-180 xs:text-base xs:leading-[1] md:text-[18px] lg:text-[20px]">Центр йоги</span>
-          <span class="-tracking-widest text-[60px] -indent-[5px] pr-1 inline-block bg-gradient-to-t from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text xs:text-[130px] xs:-indent-[10px] xs:pr-2 md:text-[150px] leading-[1] lg:tracking-tighter lg:text-[175px] landscape:tallsm:text-[150px] landscape:tallmd:text-[175px]">Lotos</span>
-        </h1>
-        <span class="flex items-center">
-          <button type="button" class="group relative shrink-0 rounded-full flex items-center justify-center w-10 h-10 xs:w-[50px] xs:h-[50px] bg-white mr-[10px] md:mr-5 hover:bg-none before:content-[''] before:w-[40px] before:h-[40px] before:rounded-full before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover:before:opacity-0 xs:before:w-[50px] xs:before:h-[50px]">
-            <svg width="16" height="16" class="absolut z-10 group-hover:fill-[url(#first-gradient)] fill-white">
-              <linearGradient id="first-gradient" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#E58BB2"/>
-                <stop offset="1" stop-color="#E58BB2" stop-opacity="0"/>
-              </linearGradient>
-              <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" />
-            </svg>
+      <div class="col w-full md:w-[61.67%] xxl:tallmd:w-6/12 xxxl:talllg:mt-[120px] xxxl:talllg:self-start">
+        <section class="splide directions-slider xxxl:talllg:w-[520px]" aria-labelledby="directions-slider-title">
+          <div class="flex justify-between">
+            <h2 id="directions-slider-title" class="flex flex-col mb-[10px] xs:tallmd:mb-[43px] xs:tallsm:mb-4 xss-min-h-740:mb-[30px]">
+              <span class="inline-block bg-gradient-to-b from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text text-[26px] xs:tallmd:text-[48px] xss-min-h-740:text-[48px] md:leading-none md:pb-[15px] md:tallsm:text-[48px]">Yoga &mdash;</span>
+              <span class="directions-slider-title-caption text-base xs:tallmd:text-2xl xs:leading-9 xs:tallmd:pt-[2px] xs:tallsm:text-xl xss-min-h-740:text-2xl">Для начинающих</span>
+            </h2>
+            <div class="directions-slider-arrows pt-2 xs:pt-6 xs:tallsm:pt-4 xs:tallmd:pt-6 xss-min-h-740:pt-5 md:talllg:hidden md:tallsm:block lg:tallsm:block lg:tallsm:pt-[11px] xl:tallmd:pt-[9px] xxl:tallmd:hidden">
+              <button type="button" class="directions-slider-left-arrow group mr-[10px]">
+                <span class="flex items-center justify-center w-[30px] h-[30px] relative rounded-full bg-white before:content-[''] before:absolute before:w-[30px] before:h-[30px] before:rounded-full before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear group-hover:before:opacity-0">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" transform="rotate(90 0 0)" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear -ml-[2px]">
+                    <linearGradient id="theme-gradient" x1="3" y1="0" x2="3" y2="6" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FC65A1"/>
+                      <stop offset="1" stop-color="#F78D69"/>
+                    </linearGradient>
+                    <path d="M6 0H0L3 6L6 0Z" />
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="directions-slider-right-arrow group">
+                <span class="flex items-center justify-center w-[30px] h-[30px] relative rounded-full bg-white before:content-[''] before:absolute before:w-[30px] before:h-[30px] before:rounded-full before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear group-hover:before:opacity-0">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" transform="rotate(-90 0 0)" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear -mr-[2px]">
+                    <linearGradient id="theme-gradient" x1="3" y1="0" x2="3" y2="6" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FC65A1"/>
+                      <stop offset="1" stop-color="#F78D69"/>
+                    </linearGradient>
+                    <path d="M6 0H0L3 6L6 0Z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="mb-[8px] xs:mb-[55px] xs:tallsm:mb-5 xs:tallmd:mb-[50px] xss-min-h-740:mb-6 splide__track">
+            <ul class="splide__list">
+              <li data-direction-title="Для начинающих" class="splide__slide">
+                <p class="text-[13px] leading-[1.4] mb-[15px] xs:text-base xs:leading-[1.87] xs:mb-[22px] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Йога для начинающих рассчитана на тех, кто до этого никогда ей не занимался и требует обучения. Такой программный комплекс существует и в нашем центре.</p>
+                <p class="text-[13px] xs:text-base xs:leading-[1.87] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Мы предлагаем посетить бесплатное вводное занятие, чтобы узнать, почему так много людей занимаются йогой и придерживаются здорового образа жизни.</p>
+              </li>
+              <li data-direction-title="Аштанга Виньяса" class="splide__slide">
+                <p class="text-[13px] leading-[1.4] mb-[15px] xs:text-base xs:leading-[1.87] xs:mb-[22px] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Это динамичный и физически интенсивный стиль йоги, включающий серию упражнений, которые выполняются в определенной последовательности.</p>
+                <p class="text-[13px] xs:text-base xs:leading-[1.87] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Этот вид йоги подразумевает постоянное движение от одной позы к другой, синхронизируя дыхание с каждым движением.</p>
+              </li>
+              <li data-direction-title="Универсальная" class="splide__slide">
+                <p class="text-[13px] leading-[1.4] mb-[15px] xs:text-base xs:leading-[1.87] xs:mb-[22px] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Это сбалансированный подход к практике, который включает в себя элементы различных стилей йоги, таких как асаны (позы), пранаяма (дыхательные упражнения) и медитацию.</p>
+                <p class="text-[13px] xs:text-base xs:leading-[1.87] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Этот вид йоги подходит для всех уровней практикующих и направлен на достижение гармонии тела, ума и души.</p>
+              </li>
+              <li data-direction-title="Кундалини" class="splide__slide">
+                <p class="text-[13px] leading-[1.4] mb-[15px] xs:text-base xs:leading-[1.87] xs:mb-[22px] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Это духовная практика, направленная на пробуждение энергии Кундалини, спящей у основания позвоночника.</p>
+                <p class="text-[13px] xs:text-base xs:leading-[1.87] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Практика включает в себя динамические движения, медитации, мантры и дыхательные упражнения, которые помогают раскрыть потенциал человека и достичь состояния высшего сознания.</p>
+              </li>
+              <li data-direction-title="Айенгара" class="splide__slide">
+                <p class="text-[13px] leading-[1.4] mb-[15px] xs:text-base xs:leading-[1.87] xs:mb-[22px] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Это стиль, который акцентирует внимание на деталях и точности выполнения асан. Практика этого вида йоги часто включает использование пропсов, чтобы помочь практикующему правильно выровняться в позах и избежать травм.</p>
+                <p class="text-[13px] xs:text-base xs:leading-[1.87] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Айенгара йога также уделяет внимание развитию силы и гибкости тела.</p>
+              </li>
+              <li data-direction-title="Терапия" class="splide__slide">
+                <p class="text-[13px] leading-[1.4] mb-[15px] xs:text-base xs:leading-[1.87] xs:mb-[22px] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Это индивидуализированный подход к практике, ориентированный на решение конкретных проблем или заболеваний через йогические методы.</p>
+                <p class="text-[13px] xs:text-base xs:leading-[1.87] xss-min-h-740:text-base xss-min-h-740:leading-[1.87] lg:tallxl:text-[18px] xl:tallmd:text-[18px]">Практика может включать в себя специальные асаны, дыхательные упражнения и медитации, направленные на улучшение здоровья практикующего.</p>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="group relative bg-tan-hide rounded-full text-white pr-[36px] pl-[60px] py-[12px] xs:pr-[56px] xs:pl-[80px] xs:py-[18px] xss-min-h-740:pr-[56px] xss-min-h-740:pl-[80px] xss-min-h-740:py-[18px] shadow-button hover:bg-white transition-colors duration-300 linear">
+            <span class="absolute left-0 top-0 pointer-events-none h-full w-[48px] xs:w-[60px] xss-min-h-740:w-[60px] bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% rounded-full flex items-center justify-center">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+                <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" />
+              </svg>
+            </span>
+            <span class="text-white text-[14px] xs:text-base group-hover:text-tan-hide group-hover:bg-gradient-to-r group-hover:from-tan-hide group-hover:from-0% group-hover:to-hot-pink group-hover:to-100% group-hover:text-transparent group-hover:bg-clip-text">Записаться онлайн</span>
           </button>
-          <span class="text-[14px] xs:text-base md:text-[20px] landscape:tallsm:text-[18px] landscape:tallmd:text-[20px]">Приглашаем вас и ваших друзей
-            на бесплатное пробное занятие</span>
-        </span>
+        </section>
       </div>
     </div>
   </div>
-</li>
-
-          <li data-slide-title="Направления и классы" data-slide-index="2" class="splide__slide">
-  <div class=""></div>
 </li>
 
           <li data-slide-title="Пробное занятие" class="splide__slide">
