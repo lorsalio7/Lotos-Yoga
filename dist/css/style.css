@@ -2239,6 +2239,65 @@ video {
     width: 100%;
   }
 
+  @media (min-height: 768px) {
+
+    .xxxl\:tallmd\:mr-\[80px\] {
+      margin-right: 80px;
+    }
+
+    .xxxl\:tallmd\:mt-\[120px\] {
+      margin-top: 120px;
+    }
+
+    .xxxl\:tallmd\:mr-0 {
+      margin-right: 0px;
+    }
+
+    .xxxl\:tallmd\:mt-\[100px\] {
+      margin-top: 100px;
+    }
+
+    .xxxl\:tallmd\:mt-\[90px\] {
+      margin-top: 90px;
+    }
+
+    .xxxl\:tallmd\:mt-\[80px\] {
+      margin-top: 80px;
+    }
+
+    .xxxl\:tallmd\:mt-\[70px\] {
+      margin-top: 70px;
+    }
+
+    .xxxl\:tallmd\:h-\[630px\] {
+      height: 630px;
+    }
+
+    .xxxl\:tallmd\:w-\[268px\] {
+      width: 268px;
+    }
+
+    .xxxl\:tallmd\:w-\[520px\] {
+      width: 520px;
+    }
+
+    .xxxl\:tallmd\:self-start {
+      align-self: flex-start;
+    }
+
+    .xxxl\:tallmd\:self-center {
+      align-self: center;
+    }
+
+    .xxxl\:tallmd\:pr-\[105px\] {
+      padding-right: 105px;
+    }
+
+    .xxxl\:tallmd\:pr-\[70px\] {
+      padding-right: 70px;
+    }
+  }
+
   @media (min-height: 1024px) {
 
     .xxxl\:talllg\:mr-0 {

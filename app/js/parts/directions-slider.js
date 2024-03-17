@@ -1,5 +1,5 @@
 let directionsSlider = new Splide('.directions-slider', {
-  speed    : 500,
+  speed    : 700,
   arrows   : false,
   pagination: false,
   gap: 30,
