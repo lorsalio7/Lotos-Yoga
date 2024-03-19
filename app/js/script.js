@@ -4,4 +4,5 @@ window.addEventListener("DOMContentLoaded", () => {
   @@include("parts/main-slider.js");
   @@include("parts/burger-menu.js");
   @@include("parts/directions-slider.js");
+  @@include("parts/trainers-slider.js");
 });
