@@ -253,8 +253,6 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       trainersSlider.on("active", el => {
         let activeIndex = Number(trainersSlider.index);
-        // slideTitle.textContent = el.slide.dataset.trainerName;
-
         activePaginationButton(activeIndex);
       });
     });
