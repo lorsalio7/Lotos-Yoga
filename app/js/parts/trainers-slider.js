@@ -33,7 +33,7 @@ if(trainersSlider) {
     trainersSlider.Components.Elements.slides.forEach((slide, index)=>{
       let button = document.createElement("button");
       button.setAttribute("type", "button");
-      button.classList.add("trainers-slider-pagination-button", "text-black-50", "mb-[20px]", "text-[18px]");
+      button.classList.add("trainers-slider-pagination-button", "text-black-50", "mb-[16px]", "text-[18px]");
       button.textContent = slide.dataset.trainerName;
       if(index === 0) {
         button.classList.add("active", "text-black");
