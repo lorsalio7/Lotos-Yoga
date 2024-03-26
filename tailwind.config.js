@@ -44,6 +44,7 @@ module.exports = {
       "dawn-pink-90": "#faf5f4e6",
       "tan-hide": "#f78e69",
       "hot-pink": "#fc65a1",
+      "silver": "#c8c4c3",
       transparent: "transparent"
     },
     extend: {
