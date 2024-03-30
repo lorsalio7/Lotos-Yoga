@@ -19,7 +19,7 @@
         <span class="burger-button__dot absolute top-2/4 left-0 block w-[2px] h-[2px] bg-black opacity-100 transition-opacity duration-200 ease-linear before:content-[''] before:absolute before:left-0 before:top-[-7px] before:block before:w-[2px] before:h-[2px] before:bg-black before:opacity-100 before:transition-opacity before:duration-200 before:ease-linear after:content-[''] after:absolute after:left-0 after:top-[7px] after:block after:w-[2px] after:h-[2px] after:bg-black after:opacity-100 after:transition-opacity after:duration-200 after:ease-linear"></span>
         <span class="burger-button__line absolute top-2/4 left-1 block w-5 h-[2px] bg-tan-hide transition-[background-color] duration-200 ease-linear delay-200 before:content-[''] before:absolute before:top-[-7px] before:left-0 before:block before:w-5 before:h-[2px] before:bg-tan-hide before:transition-[top,transform] before:duration-[0.2s,0.2s] before:ease-[linear,linear] before:delay-[0.4s,0.2s] after:content-[''] after:absolute after:top-[7px] after:left-0 after:block after:w-3.5 after:h-[2px] after:bg-tan-hide after:transition-[width,top,transform] after:duration-[0.2s,0.2s,0.2s] after:ease-[linear,linear,linear] after:delay-[0.6s,0.4s,0.2s]"></span>
       </span>
-      <span class="hidden burger-button__text text-[18px] ml-[15px] md:inline">Меню</span>
+      <span class="hidden burger-button__text text-[18px] h-[24px] ml-[15px] md:inline">Меню</span>
     </button>
     <nav class="site-navigation pointer-events-auto fixed inset-x-0 -translate-y-full inset-y-0 z-10 h-full overflow-y-auto bg-dawn-pink-90 p-7 transition-transform duration-500 linear">
       <ul class="flex flex-col pointer-events-auto justify-center items-center pl-8 pt-9 pb-9 pr-8 min-h-full overflow-y-auto">
@@ -90,93 +90,93 @@
           
           
           <li data-slide-title="Расписание" data-slide-index="6" class="splide__slide">
-  <div class="schedule flex justify-center items-center [height:calc(var(--vh)*100)] px-5 py-6">
-    <div class="table-wrapper">
+  <div class="schedule flex justify-center items-center [height:calc(var(--vh)*100)] px-5 py-6 sm:tallmd:px-[30px] lg:tallxl:px-[48px] sm:tallsm:px-[30px] lg:tallsm:px-[48px] xxl:tallmd:px-[170px]">
+    <div class="table-wrapper w-full xxl:tallmd:w-auto xxl:tallmd:max-w-[1420px] xxl:tallmd:mr-auto xxl:tallmd:ml-auto">
       <h2 class="absolute overflow-hidden -margin-[1px] border-0 p-0 w-[1px] h-[1px] [clip:rect(0_0_0_0)]">Расписание занятий</h2>
-      <table class="border-separate border-spacing-[2px]">
+      <table class="block border-separate border-spacing-[2px] [white-space:nowrap] w-screen overflow-x-auto pr-[40px] sm:tallmd:pr-[60px] lg:tallxl:pr-[96px] sm:tallsm:pr-[60px] lg:tallsm:pr-[96px] xl:tallmd:pr-[200px] xxl:tallmd:w-auto xxl:tallmd:overflow-x-visible xxl:tallmd:[white-space:wrap] xxl:tallmd:pr-0">
         <thead>
           <tr>
-            <td class="w-[201px] h-[76px] p-0 inline-flex">
-              <a href="#" class="flex justify-center items-center relative h-full w-full bg-white p-5 group before:content-[''] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:w-full before:h-full before:to-100% before:z-10 before:opacity-0 before:transition-opacity before:duration-200 before:ease-linear hover:before:opacity-100">
+            <td class="p-0 align-middle text-center xs:h-[50px] xss-min-h-740:h-[60px] xs:tallmd:w-[201px] xs:tallmd:h-[76px] lg:tallsm:h-[40px] xxl:tallmd:h-[76px]">
+              <a href="#" class="flex justify-center items-center relative h-full w-full bg-white p-2 xs:tallmd:[white-space:wrap] xs:tallmd:p-5 group before:content-[''] before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:w-full before:h-full before:to-100% before:z-10 before:opacity-0 before:transition-opacity before:duration-200 before:ease-linear hover:before:opacity-100">
                 <span class="flex justify-center items-center shrink-0 relative w-[30px] h-[30px] mr-5 rounded-full bg-white before:content-[''] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:opacity-100 before:transition-opacity before:duration-200 before:ease-linear group-hover:before:opacity-0 z-20">
                   <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-white z-20 group-hover:fill-[url(#theme-gradient)]">
                     <path transform="matrix(1,0,0,1,-292,-6264)" d="M292,6269.99L294,6269.99L294,6264L298,6264L298,6269.99L300,6269.99L296,6274L292,6269.99Z" />
                   </svg>
                 </span>
-                <span class="text-[14px] group-hover:text-white z-20">Скачать расписание</span>
+                <span class="text-[14px] text-left group-hover:text-white z-20 xl:tallmd:[white-space:nowrap] xxl:tallmd:[white-space:wrap]">Скачать расписание</span>
               </a>
             </td>
-            <td class="bg-white text-[14px] text-tan-hide p-5 w-[201px] h-[76px] align-middle text-center">08:00 &#8722; 09:25</td>
-            <td class="bg-white text-[14px] text-tan-hide p-5 w-[201px] h-[76px] align-middle text-center">09:30 &#8722; 10:55</td>
-            <td class="bg-white text-[14px] text-tan-hide p-5 w-[201px] h-[76px] align-middle text-center">11:00 &#8722; 12:25</td>
-            <td class="bg-white text-[14px] text-tan-hide p-5 w-[201px] h-[76px] align-middle text-center">13:30 &#8722; 14:55</td>
-            <td class="bg-white text-[14px] text-tan-hide p-5 w-[201px] h-[76px] align-middle text-center">15:00 &#8722; 16:25</td>
-            <td class="bg-white text-[14px] text-tan-hide p-5 w-[201px] h-[76px] align-middle text-center">17:00 &#8722; 18:25</td>
+            <td class="bg-white text-[14px] text-tan-hide p-2 xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center xxl:tallmd:h-[76px]">08:00 &#8722; 09:25</td>
+            <td class="bg-white text-[14px] text-tan-hide p-2  xs:tallmd:p-5 xs:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center xxl:tallmd:h-[76px]">09:30 &#8722; 10:55</td>
+            <td class="bg-white text-[14px] text-tan-hide p-2  xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center xxl:tallmd:h-[76px]">11:00 &#8722; 12:25</td>
+            <td class="bg-white text-[14px] text-tan-hide p-2  xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center xxl:tallmd:h-[76px]">13:30 &#8722; 14:55</td>
+            <td class="bg-white text-[14px] text-tan-hide p-2  xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center xxl:tallmd:h-[76px]">15:00 &#8722; 16:25</td>
+            <td class="bg-white text-[14px] text-tan-hide p-2  xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center xxl:tallmd:h-[76px]">17:00 &#8722; 18:25</td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="text-[14px] text-tan-hide w-[201px] h-[76px] align-middle text-center bg-white">Понедельник</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога для начинающих</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Универсальная йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога Айенгара</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Аштанга Виньяса йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йогатерапия</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Кундалини йога</td>
+            <td class="text-[14px] text-tan-hide p-2 xs:h-[50px] xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Понедельник</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога для начинающих</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Универсальная йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога Айенгара</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Аштанга Виньяса йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йогатерапия</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Кундалини йога</td>
           </tr>
           <tr>
-            <td class="text-[14px] text-tan-hide w-[201px] h-[76px] align-middle text-center bg-white">Вторник</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Кундалини йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йогатерапия</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Аштанга Виньяса йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога Айенгара</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Универсальная йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога для начинающих</td>
+            <td class="text-[14px] text-tan-hide p-2 xs:h-[50px] xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Вторник</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Кундалини йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йогатерапия</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Аштанга Виньяса йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога Айенгара</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Универсальная йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога для начинающих</td>
           </tr>
           <tr>
-            <td class="text-[14px] text-tan-hide w-[201px] h-[76px] align-middle text-center bg-white">Среда</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Универсальная йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога для начинающих</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Аштанга Виньяса йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога Айенгара</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Кундалини йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йогатерапия</td>
+            <td class="text-[14px] text-tan-hide p-2 xs:h-[50px] xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Среда</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Универсальная йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога для начинающих</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Аштанга Виньяса йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога Айенгара</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Кундалини йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йогатерапия</td>
           </tr>
           <tr>
-            <td class="text-[14px] text-tan-hide w-[201px] h-[76px] align-middle text-center bg-white">Четверг</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога для начинающих</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Универсальная йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога Айенгара</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Аштанга Виньяса йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йогатерапия</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Кундалини йога</td>
+            <td class="text-[14px] text-tan-hide p-2 xs:h-[50px] xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Четверг</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога для начинающих</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Универсальная йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога Айенгара</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Аштанга Виньяса йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йогатерапия</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Кундалини йога</td>
           </tr>
           <tr>
-            <td class="text-[14px] text-tan-hide w-[201px] h-[76px] align-middle text-center bg-white">Пятница</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Кундалини йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йогатерапия</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Аштанга Виньяса йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога Айенгара</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Универсальная йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога для начинающих</td>
+            <td class="text-[14px] text-tan-hide p-2 xs:h-[50px] xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Пятница</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Кундалини йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йогатерапия</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Аштанга Виньяса йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога Айенгара</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Универсальная йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога для начинающих</td>
           </tr>
           <tr>
-            <td class="text-[14px] text-tan-hide w-[201px] h-[76px] align-middle text-center bg-white">Суббота</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Универсальная йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога для начинающих</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Аштанга Виньяса йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога Айенгара</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Кундалини йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йогатерапия</td>
+            <td class="text-[14px] text-tan-hide p-2 xs:h-[50px] xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Суббота</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Универсальная йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога для начинающих</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Аштанга Виньяса йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога Айенгара</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Кундалини йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йогатерапия</td>
           </tr>
           <tr>
-            <td class="text-[14px] text-tan-hide w-[201px] h-[76px] align-middle text-center bg-white">Воскресенье</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога для начинающих</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Универсальная йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йога Айенгара</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Аштанга Виньяса йога</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Йогатерапия</td>
-            <td class="text-[14px] w-[201px] h-[76px] align-middle text-center bg-white">Кундалини йога</td>
+            <td class="text-[14px] text-tan-hide p-2 xs:h-[50px] xs:tallmd:p-5 xs:tallmd:w-[201px] xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Воскресенье</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога для начинающих</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Универсальная йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йога Айенгара</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Аштанга Виньяса йога</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Йогатерапия</td>
+            <td class="text-[14px] p-2 xs:h-[50px] xs:tallmd:w-[201px] xs:tallmd:p-5 xs:tallmd:h-[76px] xss-min-h-740:h-[60px] lg:tallsm:h-[40px] align-middle text-center bg-white xxl:tallmd:h-[76px]">Кундалини йога</td>
           </tr>
         </tbody>
       </table>
