@@ -6,4 +6,5 @@ window.addEventListener("DOMContentLoaded", () => {
   @@include("parts/directions-slider.js");
   @@include("parts/trainers-slider.js");
   @@include("parts/reviews-slider.js");
+  @@include("parts/reviews-read-all.js");
 });

@@ -24,13 +24,30 @@
           <!-- @@include("parts/schedule.html") -->
           @@include("parts/reviews.html")
           @@include("parts/promo-2.html")
-          @@include("parts/contacts.html")
+          <!-- @@include("parts/contacts.html") -->
         </ul>
       </div>
     </div>
   </div>
+  <div class="modals">
+    <div class="reviews-modal modal cursor-pointer hidden fixed top-0 left-0 right-0 bottom-0 bg-dawn-pink-90 opacity-0 transition-opacity duration-300 ease-linear overflow-y-auto p-[30px] z-[50]">
+      <div class="modal-container relative m-auto max-w-[500px] cursor-default opacity-100 -translate-y-full transition-[transform,opacity] duration-500 ease-linear">
+        <div class="modal-body rounded-[10px] shadow-modal px-[30px] pt-[30px] pb-[22px] bg-dawn-pink cursor-default">
+          <div class="modal-top mb-3">
+            <button type="button" class="close-button w-9 h-9 ml-auto flex justify-center items-center rounded-full bg-white -mr-4 -mt-4">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-tan-hide">
+                <path transform="matrix(1,0,0,1,-1654,-9848)" d="M1661,9854.12L1667.13,9848L1668,9848.87L1661.88,9855L1668,9861.12L1667.13,9862L1661,9855.88L1654.87,9862L1654,9861.12L1660.12,9855L1654,9848.87L1654.87,9848L1661,9854.12Z" />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-content">
+            <p class="text-[14px] leading-[16px]">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Текст имени если они которое о ipsum продолжил деревни речью?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="libs/js/splide.min.js" defer></script>
-  <!-- <script src="libs/js/splide-extension-url-hash.min.js" defer></script> -->
-  <script src="js/script.js" defer></script>
+  <script src="js/script.min.js" defer></script>
 </body>
 </html>

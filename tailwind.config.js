@@ -70,6 +70,7 @@ module.exports = {
       },
       boxShadow: {
         button: "0 0 50px #0000001a",
+        modal: "0 0 10px #0000001a"
       }
     },
   },
