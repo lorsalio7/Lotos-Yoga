@@ -377,4 +377,14 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
   ;
+  function fixPaginationHeight() {
+    let reviewsRightCol = document.querySelector(".reviews-right-col");
+    let paginationMargin = reviewsRightCol.offsetHeight;
+    document.documentElement.style.setProperty('--pagination-height', `${paginationMargin}px`);
+  }
+  fixPaginationHeight();
+  window.addEventListener('resize', debounce(() => {
+    fixPaginationHeight();
+  }, 300));
+  ;
 });

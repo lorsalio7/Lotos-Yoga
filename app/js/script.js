@@ -7,4 +7,5 @@ window.addEventListener("DOMContentLoaded", () => {
   @@include("parts/trainers-slider.js");
   @@include("parts/reviews-slider.js");
   @@include("parts/reviews-read-all.js");
+  @@include("parts/fix-review-indentation.js");
 });
