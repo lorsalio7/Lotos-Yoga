@@ -5,7 +5,7 @@
         <img src="https://placehold.co/522x711/BF7AFF/FFFFFF.png" width="544" height="609" alt="Специальное предложение" aria-hidden="true" class="object-contain md:block md:w-[357px] md:h-[486px] lg:talllg:ml-auto lg:tallsm:w-[320px] lg:tallsm:h-[436px] lg:tallsm:ml-auto xl:tallmd:w-[350px] xl:tallmd:h-[477px] xxl:tallmd:w-[450px] xxl:tallmd:h-[613px] xxxl:talllg:w-[522px] xxxl:talllg:h-[711px]">
       </div>
       <div class="promo-text-content shrink-0 md:basis-[435px] lg:basis-[50%]">
-        <form action="#" method="post" class="max-w-[435px] lg:tallsm:max-w-[410px] xl:tallmd:max-w-[437px]">
+        <form action="#" method="post" class="relative max-w-[435px] lg:tallsm:max-w-[410px] xl:tallmd:max-w-[437px]">
           <h2 class="absolute overflow-hidden -margin-[1px] border-0 p-0 w-[1px] h-[1px] [clip:rect(0_0_0_0)]">Специальное предложение</h2>
           <p class="text-xl mb-1 xs:text-5xl xs:tallsm:text-4xl xs:tallsm:mb-5 xs:mb-9 xs:tallmd:text-5xl xs:tallmd:mb-9 xss-min-h-740:text-[40px] xss-min-h-740:leading-tight xss-min-h-740:mb-7 md:talllg:mb-[44px] lg:tallsm:text-[26px] lg:tallsm:mb-[10px] xl:tallmd:text-5xl xxxl:tallmd:mb-[44px]"><span class="text-[34px] leading-[1] xs:text-[80px] xs:tallsm:text-5xl xs:tallmd:text-[80px] xss-min-h-740:text-[80px] inline-block bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text">10%</span> скидка на&nbsp;абонемент</p>
           <p class="text-[14px] mb-[15px] xs:text-base xs:leading-8 xs:tallsm:mb-[20px] xs:mb-[26px] xs:tallmd:mb-[26px] xss-min-h-740:leading-8 xss-min-h-740:mb-[26px] xss-min-h-740:text-base md:talllg:text-[18px] md:talllg:mb-[45px] lg:tallsm:leading-6 lg:tallsm:mb-[15px] xl:tallmd:text-[18px] xl:tallmd:leading-8 xxxl:tallmd:mb-[45px]">Хотите скидку на абонемент? Приведите с собой друзей и получите -10% за каждого пришедшего</p>
@@ -26,6 +26,13 @@
             <span class="text-white text-[14px] xs:text-base group-hover:text-tan-hide group-hover:bg-gradient-to-r group-hover:from-tan-hide group-hover:from-0% group-hover:to-hot-pink group-hover:to-100% group-hover:text-transparent group-hover:bg-clip-text">Отправить заявку</span>
           </button>
           <p class="text-[10px] leading-[1.3] xs:text-xs xs:leading-5 max-w-[320px] xss-min-h-740:text-xs xss-min-h-740:leading-5">Нажимая &laquo;Отправить заявку&raquo;, вы даете <a href="#" class="underline hover:text-tan-hide transition-colors duration-100 ease-linear">согласие</a> на обработку своих персональных данных</p>
+          <!-- success-form-window после отправки формы добавляются классы (flex, translate-y-0) -->
+          <div class="success-form-window absolute top-0 left-0 right-0 bottom-0 bg-dawn-pink hidden -translate-y-full">
+            <div class="success-form-window-text flex flex-col self-center">
+              <span class="text-[60px] inline-block bg-gradient-to-r from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text leading-[1] mb-2 xs:tallsm:text-[70px] xs:tallsm:mb-6">Спасибо!</span>
+              <span class="text-[16px] xs:tallsm:text-[18px]">Мы свяжемся с вами в течении 15&nbsp;минут...</span>
+            </div>
+          </div>
         </form>
       </div>
     </div>
