@@ -1,5 +1,3 @@
-let reviewsSection = document.querySelector(".reviews");
-
 if(reviewsSection) {
   function fixPaginationHeight() {
     let reviewsRightCol = document.querySelector(".reviews-right-col");
