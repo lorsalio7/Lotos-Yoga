@@ -8,4 +8,5 @@ window.addEventListener("DOMContentLoaded", () => {
   @@include("parts/reviews-slider.js");
   @@include("parts/reviews-read-all.js");
   @@include("parts/fix-review-indentation.js");
+  @@include("parts/copyright-year.js");
 });
