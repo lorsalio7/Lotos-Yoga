@@ -85,9 +85,7 @@ mainSlider.on("active", (el) => {
     nextPrevSliderButtonIcon.setAttribute("transform", "rotate(0 0 0)");
   } else {
     nextPrevSliderButtonIcon.setAttribute("transform", "rotate(-180 0 0)");
-    let prevSlide = el.slide.previousElementSibling;
-    let prevSlideTitle = prevSlide.dataset.slideTitle;
-    prevNextSlideTitle.textContent = prevSlideTitle;
+    prevNextSlideTitle.textContent = "Вернуться";
   }
 
   activateMenuLink(el.index, siteMenuLinks, "text-black-50");
