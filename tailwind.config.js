@@ -23,6 +23,7 @@ module.exports = {
       "xl": { "min": "1280px" },
       "xxl": { "min": "1536px" },
       "xxxl": { "min": "1920px" },
+      "hover-hover": { "raw": "(hover: hover)" },
     },
     container: {
       center: false,
