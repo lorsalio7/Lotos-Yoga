@@ -5,6 +5,8 @@ function fixVh() {
 
 fixVh();
 
-window.addEventListener('resize', debounce(() => {
+window.addEventListener("resize", () => {
   fixVh();
-}, 300));
+});
+
+

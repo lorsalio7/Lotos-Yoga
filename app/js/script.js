@@ -10,4 +10,5 @@ window.addEventListener("DOMContentLoaded", () => {
   @@include("parts/fix-review-indentation.js");
   @@include("parts/review-form.js");
   @@include("parts/copyright-year.js");
+  @@include("parts/contacts-map.js");
 });
