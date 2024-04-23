@@ -15,6 +15,7 @@ module.exports = {
       "tallxl": { "raw": "(min-height: 1280px)"},
       "xxxs-min-h-600": { "raw": "(min-width: 280px) and (min-height: 600px)"},
       "xss-min-h-740": { "raw": "(min-width: 360px) and (min-height: 740px)"},
+      "tallxss-min-h-360": { "raw": "(min-width: 740px) and (min-height: 360px)"},
       "xxs": { "min": "320px" },
       "xs": { "min": "375px" },
       "sm": { "min": "425px" },
