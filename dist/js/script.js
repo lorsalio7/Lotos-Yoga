@@ -399,11 +399,13 @@ window.addEventListener("DOMContentLoaded", () => {
   if (sendReviewButton) {
     let contactsReviewForm = document.querySelector(".contacts-review-form");
     let contactsReviewFormCloseButton = contactsReviewForm.querySelector(".close-review-form-button");
+    let signUpButton = document.querySelector(".sign-up-button");
     sendReviewButton.addEventListener("click", openReviewForm);
     contactsReviewFormCloseButton.addEventListener("click", closeReviewForm);
     function openReviewForm() {
       contactsReviewForm.classList.remove("hidden");
       contactsReviewForm.classList.add("block");
+      signUpButton.classList.remove("shadow-button");
       setTimeout(() => {
         contactsReviewForm.classList.add("opacity-100");
       }, 10);
@@ -413,6 +415,7 @@ window.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         contactsReviewForm.classList.add("hidden");
         contactsReviewForm.classList.remove("block");
+        signUpButton.classList.add("shadow-button");
       }, 550);
     }
   }
@@ -435,11 +438,29 @@ window.addEventListener("DOMContentLoaded", () => {
         iconImageSize: [49, 60],
         iconImageOffset: [-19, -44]
       });
+      window.addEventListener("resize", debounce(() => {
+        mapAdaptive();
+      }, 300));
+      window.addEventListener("orientationchange", () => {
+        mapAdaptive();
+      });
       contactsMap.geoObjects.add(placemark);
       contactsMap.behaviors.disable(["scrollZoom"]);
       contactsMap.controls.remove("zoomControl");
+      contactsMap.controls.remove("geolocationControl");
+      contactsMap.controls.remove("routeEditor");
+      contactsMap.controls.remove("trafficControl");
+      contactsMap.controls.remove("typeSelector");
+      contactsMap.controls.remove("fullscreenControl");
+      contactsMap.controls.remove("searchControl");
+      contactsMap.controls.remove("rulerControl");
+      contactsMap.controls.remove("routeButtonControl");
+      contactsMap.controls.remove("routePanelControl");
     }
     ymaps.ready(init);
+    function mapAdaptive() {
+      contactsMap.container.fitToViewport();
+    }
   }
   ;
 });

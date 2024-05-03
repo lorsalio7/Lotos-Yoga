@@ -14,10 +14,31 @@ if(contactsMap) {
       iconImageSize: [49,60],
       iconImageOffset: [-19,-44]
     });
+    window.addEventListener("resize", debounce(() => {
+      mapAdaptive();
+    }, 300));
+
+    window.addEventListener("orientationchange", () => {
+      mapAdaptive();
+    })
+
     contactsMap.geoObjects.add(placemark);
     contactsMap.behaviors.disable(["scrollZoom"]);
     contactsMap.controls.remove("zoomControl");
+    contactsMap.controls.remove("geolocationControl");
+    contactsMap.controls.remove("routeEditor");
+    contactsMap.controls.remove("trafficControl");
+    contactsMap.controls.remove("typeSelector");
+    contactsMap.controls.remove("fullscreenControl");
+    contactsMap.controls.remove("searchControl");
+    contactsMap.controls.remove("rulerControl");
+    contactsMap.controls.remove("routeButtonControl");
+    contactsMap.controls.remove("routePanelControl");
   }
   ymaps.ready(init);
+
+  function mapAdaptive() {
+    contactsMap.container.fitToViewport();
+  }
 }
 
