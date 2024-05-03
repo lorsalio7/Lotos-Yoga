@@ -6357,12 +6357,20 @@ video {
         height: 250px;
       }
 
+      .landscape\:lg\:tallsm\:h-\[14px\] {
+        height: 14px;
+      }
+
       .landscape\:lg\:tallsm\:w-\[250px\] {
         width: 250px;
       }
 
       .landscape\:lg\:tallsm\:w-\[60px\] {
         width: 60px;
+      }
+
+      .landscape\:lg\:tallsm\:w-\[14px\] {
+        width: 14px;
       }
 
       .landscape\:lg\:tallsm\:max-w-\[150px\] {
@@ -7319,6 +7327,10 @@ video {
 
       .landscape\:xl\:talllg\:self-start {
         align-self: flex-start;
+      }
+
+      .landscape\:xl\:talllg\:bg-dawn-pink-95 {
+        background-color: #faf5f4f2;
       }
 
       .landscape\:xl\:talllg\:px-0 {

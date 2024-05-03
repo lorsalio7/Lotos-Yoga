@@ -441,9 +441,9 @@ window.addEventListener("DOMContentLoaded", () => {
       window.addEventListener("resize", debounce(() => {
         mapAdaptive();
       }, 300));
-      window.addEventListener("orientationchange", () => {
+      window.addEventListener("orientationchange", debounce(() => {
         mapAdaptive();
-      });
+      }, 300));
       contactsMap.geoObjects.add(placemark);
       contactsMap.behaviors.disable(["scrollZoom"]);
       contactsMap.controls.remove("zoomControl");
