@@ -52,6 +52,11 @@ module.exports = {
       transparent: "transparent"
     },
     extend: {
+      keyframes: {
+        rotate180: {
+          "to": { transform: "rotate(-180deg)" }
+        }
+      },
       maxWidth: {
         mw: "1650px",
       },

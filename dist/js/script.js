@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   mainSlider.mount();
   let nextPrevSliderButton = document.querySelector(".next-slide-button");
-  let nextPrevSliderButtonIcon = nextPrevSliderButton.querySelector(".next-slide-button__icon svg");
+  let nextPrevSliderButtonIcon = nextPrevSliderButton.querySelector(".next-slide-button__icon g");
   let firstSlide = document.querySelectorAll(".main-slider .splide__slide")[0];
   let currentSliderNumber = document.querySelector(".current-slider-number");
   let totalSliderNumber = document.querySelector(".total-slider-number");
@@ -103,9 +103,9 @@ window.addEventListener("DOMContentLoaded", () => {
     if (nextSlide) {
       let nextSlideTitle = nextSlide.dataset.slideTitle;
       prevNextSlideTitle.textContent = nextSlideTitle;
-      nextPrevSliderButtonIcon.setAttribute("transform", "rotate(0 0 0)");
+      nextPrevSliderButtonIcon.classList.remove("rotate-180");
     } else {
-      nextPrevSliderButtonIcon.setAttribute("transform", "rotate(-180 0 0)");
+      nextPrevSliderButtonIcon.classList.add("rotate-180");
       prevNextSlideTitle.textContent = "Вернуться";
     }
     activateMenuLink(el.index, siteMenuLinks, "text-black-50");

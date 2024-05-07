@@ -55,12 +55,14 @@
     <button type="button" class="next-slide-button group flex items-center col-start-4 col-end-4 row-start-3 row-end-3 self-end justify-self-end pointer-events-auto md:col-start-1 md:col-end-1 md:row-start-3 md:row-end-3 md:justify-self-start xl:col-start-4 xl:col-end-4 xl:row-start-3 xl:row-end-3 xl:justify-self-end">
       <span class="hidden group next-prev-slider-title mr-[22px] xl:inline">Направления и классы</span>
       <span class="next-slide-button__icon flex items-center justify-center w-[30px] h-[30px] relative rounded-full bg-white before:content-[''] before:absolute before:w-[30px] before:h-[30px] before:rounded-full before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover-hover:group-hover:before:opacity-0">
-        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" transform="rotate(0 0 0)" xmlns="http://www.w3.org/2000/svg" class="hover-hover:group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear">
+        <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg" class="absolut z-10 hover-hover:group-hover:fill-[url(#theme-gradient)] fill-white transition-transform duration-200 ease-linear">
           <linearGradient id="theme-gradient" x1="3" y1="0" x2="3" y2="6" gradientUnits="userSpaceOnUse">
             <stop stop-color="#FC65A1"/>
             <stop offset="1" stop-color="#F78D69"/>
           </linearGradient>
-          <path d="M6 0H0L3 6L6 0Z" />
+          <g class="transition-transform duration-200 ease-linear" transform-origin="center" >
+            <path d="M6 0H0L3 6L6 0Z" />
+          </g>
         </svg>
       </span>
     </button>
