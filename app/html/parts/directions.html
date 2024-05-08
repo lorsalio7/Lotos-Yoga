@@ -18,23 +18,27 @@
             <div class="directions-slider-arrows pt-2 landscape:pt-0 landscape:lg:tallmd:self-end landscape:xl:tallmd:hidden xs:pt-6 xs:tallsm:pt-4 xs:tallmd:pt-6 xxs:tallmd:pt-6 xss-min-h-740:pt-5 md:talllg:hidden md:tallsm:block lg:tallsm:block lg:tallxl:hidden lg:tallsm:pt-[11px] lg:tallmd:hidden xl:tallmd:pt-[9px] xxl:tallmd:hidden landscape:lg:tallsm:self-start md:tallmd:hidden">
               <button type="button" class="directions-slider-left-arrow group mr-[10px]">
                 <span class="flex items-center justify-center w-[30px] h-[30px] relative rounded-full bg-white before:content-[''] before:absolute before:w-[30px] before:h-[30px] before:rounded-full before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover-hover:group-hover:before:opacity-0">
-                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" transform="rotate(90 0 0)" xmlns="http://www.w3.org/2000/svg" class="hover-hover:group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear -ml-[2px]">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolut z-10 hover-hover:group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear -ml-[2px]">
                     <linearGradient id="theme-gradient" x1="3" y1="0" x2="3" y2="6" gradientUnits="userSpaceOnUse">
                       <stop stop-color="#FC65A1"/>
                       <stop offset="1" stop-color="#F78D69"/>
                     </linearGradient>
-                    <path d="M6 0H0L3 6L6 0Z" />
+                    <g class="rotate-90" transform-origin="center">
+                      <path d="M6 0H0L3 6L6 0Z" />
+                    </g>
                   </svg>
                 </span>
               </button>
               <button type="button" class="directions-slider-right-arrow group">
                 <span class="flex items-center justify-center w-[30px] h-[30px] relative rounded-full bg-white before:content-[''] before:absolute before:w-[30px] before:h-[30px] before:rounded-full before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover-hover:group-hover:before:opacity-0">
-                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" transform="rotate(-90 0 0)" xmlns="http://www.w3.org/2000/svg" class="hover-hover:group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear -mr-[2px]">
+                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolut z-10 hover-hover:group-hover:fill-[url(#theme-gradient)] fill-white transition-[transform] duration-200 ease-linear -mr-[2px]">
                     <linearGradient id="theme-gradient" x1="3" y1="0" x2="3" y2="6" gradientUnits="userSpaceOnUse">
                       <stop stop-color="#FC65A1"/>
                       <stop offset="1" stop-color="#F78D69"/>
                     </linearGradient>
-                    <path d="M6 0H0L3 6L6 0Z" />
+                    <g class="-rotate-90" transform-origin="center">
+                      <path d="M6 0H0L3 6L6 0Z" />
+                    </g>
                   </svg>
                 </span>
               </button>
