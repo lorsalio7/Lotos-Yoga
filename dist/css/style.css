@@ -823,6 +823,9 @@ video {
 .mr-\[30px\] {
   margin-right: 30px;
 }
+.mr-\[40px\] {
+  margin-right: 40px;
+}
 .block {
   display: block;
 }
@@ -881,6 +884,9 @@ video {
 .h-\[90px\] {
   height: 90px;
 }
+.h-auto {
+  height: auto;
+}
 .h-full {
   height: 100%;
 }
@@ -902,6 +908,9 @@ video {
 .w-\[1px\] {
   width: 1px;
 }
+.w-\[20px\] {
+  width: 20px;
+}
 .w-\[2px\] {
   width: 2px;
 }
@@ -922,6 +931,9 @@ video {
 }
 .w-screen {
   width: 100vw;
+}
+.min-w-full {
+  min-width: 100%;
 }
 .max-w-\[1436px\] {
   max-width: 1436px;
@@ -956,6 +968,10 @@ video {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+.basis-full {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 .border-separate {
   border-collapse: separate;
@@ -1039,6 +1055,11 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.items-stretch {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .justify-start {
   -webkit-box-pack: start;
@@ -1554,6 +1575,9 @@ video {
 .ease-linear {
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
+}
+.\[-webkit-overflow-scrolling\:touch\] {
+  -webkit-overflow-scrolling: touch;
 }
 .\[clip\:rect\(0_0_0_0\)\] {
   clip: rect(0 0 0 0);
@@ -2521,13 +2545,13 @@ video {
     padding-bottom: 18px;
   }
 
-  .xs\:py-\[34px\] {
-    padding-top: 34px;
-    padding-bottom: 34px;
+  .xs\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-  .xs\:pl-\[40px\] {
-    padding-left: 40px;
+  .xs\:pl-\[20px\] {
+    padding-left: 20px;
   }
 
   .xs\:pl-\[80px\] {
@@ -2538,8 +2562,8 @@ video {
     padding-right: 0.5rem;
   }
 
-  .xs\:pr-\[20px\] {
-    padding-right: 20px;
+  .xs\:pr-\[15px\] {
+    padding-right: 15px;
   }
 
   .xs\:pr-\[56px\] {
@@ -2933,6 +2957,10 @@ video {
       width: 200px;
     }
 
+    .sm\:tallsm\:w-\[20px\] {
+      width: 20px;
+    }
+
     .sm\:tallsm\:max-w-\[140px\] {
       max-width: 140px;
     }
@@ -2987,6 +3015,10 @@ video {
 
     .sm\:tallmd\:h-\[374px\] {
       height: 374px;
+    }
+
+    .sm\:tallmd\:w-\[20px\] {
+      width: 20px;
     }
 
     .sm\:tallmd\:w-\[250px\] {
@@ -3540,6 +3572,10 @@ video {
       width: 14px;
     }
 
+    .md\:talllg\:w-\[30px\] {
+      width: 30px;
+    }
+
     .md\:talllg\:w-\[470px\] {
       width: 470px;
     }
@@ -3965,6 +4001,10 @@ video {
       width: 55%;
     }
 
+    .lg\:tallsm\:w-\[96px\] {
+      width: 96px;
+    }
+
     .lg\:tallsm\:w-auto {
       width: auto;
     }
@@ -4227,6 +4267,10 @@ video {
 
     .lg\:tallxl\:w-\[400px\] {
       width: 400px;
+    }
+
+    .lg\:tallxl\:w-\[48px\] {
+      width: 48px;
     }
 
     .lg\:tallxl\:w-auto {
@@ -4527,6 +4571,10 @@ video {
 
     .xl\:tallmd\:w-6\/12 {
       width: 50%;
+    }
+
+    .xl\:tallmd\:w-\[200px\] {
+      width: 200px;
     }
 
     .xl\:tallmd\:w-\[220px\] {
@@ -4850,6 +4898,10 @@ video {
       height: 76px;
     }
 
+    .xxl\:tallmd\:w-0 {
+      width: 0px;
+    }
+
     .xxl\:tallmd\:w-6\/12 {
       width: 50%;
     }
@@ -4940,10 +4992,6 @@ video {
 
     .xxl\:tallmd\:\[white-space\:normal\] {
       white-space: normal;
-    }
-
-    .xxl\:tallmd\:\[white-space\:wrap\] {
-      white-space: wrap;
     }
   }
 }
@@ -6847,6 +6895,10 @@ video {
         width: 250px;
       }
 
+      .landscape\:lg\:tallsm\:w-\[30px\] {
+        width: 30px;
+      }
+
       .landscape\:lg\:tallsm\:w-\[60px\] {
         width: 60px;
       }
@@ -7410,6 +7462,10 @@ video {
         height: 340px;
       }
 
+      .landscape\:xl\:tallsm\:w-0 {
+        width: 0px;
+      }
+
       .landscape\:xl\:tallsm\:w-auto {
         width: auto;
       }
@@ -7543,6 +7599,10 @@ video {
 
       .landscape\:xl\:tallmd\:w-\[400px\] {
         width: 400px;
+      }
+
+      .landscape\:xl\:tallmd\:w-\[48px\] {
+        width: 48px;
       }
 
       .landscape\:xl\:tallmd\:w-\[490px\] {
@@ -7766,6 +7826,10 @@ video {
         height: 460px;
       }
 
+      .landscape\:xl\:talllg\:w-\[48px\] {
+        width: 48px;
+      }
+
       .landscape\:xl\:talllg\:w-\[490px\] {
         width: 490px;
       }
@@ -7925,6 +7989,10 @@ video {
 
       .landscape\:xxl\:tallmd\:h-\[560px\] {
         height: 560px;
+      }
+
+      .landscape\:xxl\:tallmd\:w-0 {
+        width: 0px;
       }
 
       .landscape\:xxl\:tallmd\:w-\[14\.29\%\] {

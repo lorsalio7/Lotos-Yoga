@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1">
   <title>Lotos - центр йоги</title>
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -11,18 +11,18 @@
   <link rel="stylesheet" href="libs/css/splide.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="p-0 w-full bg-dawn-pink font-sans">
+<body class="p-0 w-full bg-dawn-pink font-sans [height:calc(var(--vh)*100)]">
   <div class="w-full">
     @@include("parts/header.html")
     <div class="splide main-slider">
       <div class="splide__track">
         <ul class="splide__list">
           <!-- @@include("parts/hero.html") -->
-          @@include("parts/directions.html")
+          <!-- @@include("parts/directions.html") -->
           <!-- @@include("parts/promo.html") -->
           <!-- @@include("parts/trainers.html") -->
           <!-- @@include("parts/subscription.html") -->
-          <!-- @@include("parts/schedule.html") -->
+          @@include("parts/schedule.html")
           <!-- @@include("parts/reviews.html") -->
           <!-- @@include("parts/promo-2.html") -->
           <!-- @@include("parts/contacts.html") -->
@@ -36,7 +36,7 @@
         <div class="modal-body rounded-[10px] shadow-modal px-[30px] pt-[30px] pb-[22px] bg-dawn-pink cursor-default xs:tallsm:pb-[10px]">
           <div class="modal-top mb-3">
             <button type="button" class="close-button w-9 h-9 ml-auto flex justify-center items-center rounded-full bg-white -mr-4 -mt-4">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-tan-hide pointer-events-none">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-tan-hide pointer-events-none">
                 <path transform="matrix(1,0,0,1,-1654,-9848)" d="M1661,9854.12L1667.13,9848L1668,9848.87L1661.88,9855L1668,9861.12L1667.13,9862L1661,9855.88L1654.87,9862L1654,9861.12L1660.12,9855L1654,9848.87L1654.87,9848L1661,9854.12Z" />
               </svg>
             </button>
