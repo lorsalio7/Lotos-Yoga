@@ -62,9 +62,9 @@ module.exports = {
         header: "1fr 1fr 1fr 1fr",
       },
       transitionProperty: {
-        "top":  "top",
+        "top": "top",
         "transform": "transform",
-        "width": "width"
+        "width": "width",
       },
       transitionTimingFunction: {
         "linear": "linear",
