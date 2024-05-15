@@ -9,6 +9,11 @@ let mainSlider = new Splide('.main-slider', {
 
 mainSlider.mount();
 
+window.addEventListener("resize", () => {
+  mainSlider.options.height = 'calc(var(--vh) * 100)';
+  mainSlider.refresh();
+})
+
 
 let nextPrevSliderButton = document.querySelector(".next-slide-button");
 let nextPrevSliderButtonIcon = nextPrevSliderButton.querySelector(".next-slide-button__icon g");

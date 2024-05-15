@@ -45,6 +45,10 @@ window.addEventListener("DOMContentLoaded", () => {
     pagination: false
   });
   mainSlider.mount();
+  window.addEventListener("resize", () => {
+    mainSlider.options.height = 'calc(var(--vh) * 100)';
+    mainSlider.refresh();
+  });
   let nextPrevSliderButton = document.querySelector(".next-slide-button");
   let nextPrevSliderButtonIcon = nextPrevSliderButton.querySelector(".next-slide-button__icon g");
   let firstSlide = document.querySelectorAll(".main-slider .splide__slide")[0];
