@@ -2,12 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, user-scalable=0, minimum-scale=1.0, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lotos - центр йоги</title>
+  <meta name="description" content="Здесь нужно указать описание сайта">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <meta name="theme-color" content="#faf5f4"/>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=КЛЮЧ&lang=ru_RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=34aee372-ec8f-4fe4-a941-87d490ddd366&lang=ru_RU" defer></script>
+  <link rel="preload", href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload", href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="libs/css/splide.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -49,7 +52,7 @@
     </nav>
     <span class="current-slide-title hidden col-start-3 col-end-3 row-start-1 row-end-1 text-lg before:content-['\25CF'] before:text-[7px] before:leading-[6px] before:inline before:align-middle before:mr-[10px] before:text-tan-hide xl:inline"></span>
     <a href="#" class="hidden pointer-events-auto col-start-4 col-end-4 row-start-1 row-end-1 self-start justify-self-end text-lg md:inline-block transition-colors duration-200 ease-linear hover-hover:hover:text-tan-hide">+7 (812) 345-56-97</a>
-    <a class="col-start-4 col-end-4 row-start-1 row-end-1 justify-self-end self-start md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-1 md:justify-self-center xl:col-start-1 xl:col-end-1 xl:row-start-2 xl:row-end-2 xl:justify-self-start xl:self-center">
+    <a href="/" class="col-start-4 col-end-4 row-start-1 row-end-1 justify-self-end self-start md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-1 md:justify-self-center xl:col-start-1 xl:col-end-1 xl:row-start-2 xl:row-end-2 xl:justify-self-start xl:self-center">
       <img src="img/logo.svg" class="w-10 h-[25px] block object-contain" alt="Logo">
     </a>
     <span class="flex flex-col justify-start self-end col-start-1 col-end-1 row-start-3 row-end-3 landscape:flex-row landscape:sm:tallxs:flex-col landscape:md:tallxxs:flex-col md:col-start-4 md:col-end-4 md:row-start-3 md:row-end-3 md:justify-self-end xl:justify-end xl:col-start-4 xl:col-end-4 xl:row-start-2 xl:row-end-2 xl:self-center">
@@ -99,7 +102,7 @@
           <span class="-tracking-widest text-[60px] inline-block -indent-[5px] pr-1 bg-gradient-to-t from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text landscape:text-[80px] landscape:-indent-[2px] landscape:md:tallsm:text-[110px] landscape:md:tallxs:text-[110px] landscape:tallxss-min-h-360:text-[110px] landscape:lg:tallmd:text-[150px] landscape:lg:tallmd:-indent-[10px] landscape:xl:tallmd:text-[200px] landscape:sm:tallsm:text-[90px] landscape:lg:tallsm:text-[140px] landscape:md:tallmd:text-[140px] xss-min-h-740:text-[100px] xss-min-h-740:pr-2 xss-min-h-740:-indent-2 xs:text-[110px] xs:tallmd:text-[130px] xs:-indent-[10px] xs:pr-2 xxs:tallmd:text-[120px] xxs:tallmd:-indent-[8px] xxs:tallmd:pr-3 md:text-[150px] leading-[1] lg:tracking-tighter lg:text-[175px] landscape:tallsm:text-[150px] landscape:tallmd:text-[175px]">Lotos</span>
         </h1>
         <span class="flex items-center">
-          <button type="button" class="group relative shrink-0 rounded-full flex items-center justify-center w-10 h-10 xss-min-h-740:w-[50px] landscape:w-10 landscape:h-10 xss-min-h-740:h-[50px] xss-min-h-740:before:w-[50px] xss-min-h-740:before:h-[50px] landscape:lg:tallmd:w-[50px] landscape:lg:tallmd:h-[50px] landscape:lg:tallmd:before:w-[50px] landscape:lg:tallmd:before:h-[50px] xs:w-[50px] xs:h-[50px] bg-white mr-[10px] md:mr-5 hover-hover:hover:bg-none before:content-[''] before:w-[40px] before:h-[40px] before:rounded-full before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover-hover:hover:before:opacity-0 landscape:before:w-10 landscape:before:h-10 xs:before:w-[50px] landscape:md:tallmd:w-[50px] landscape:md:tallmd:h-[50px] landscape:md:tallmd:before:w-[50px] landscape:md:tallmd:before:h-[50px] xs:before:h-[50px]">
+          <button type="button" aria-label="Записаться на бесплатное пробное занятие" class="group relative shrink-0 rounded-full flex items-center justify-center w-10 h-10 xss-min-h-740:w-[50px] landscape:w-10 landscape:h-10 xss-min-h-740:h-[50px] xss-min-h-740:before:w-[50px] xss-min-h-740:before:h-[50px] landscape:lg:tallmd:w-[50px] landscape:lg:tallmd:h-[50px] landscape:lg:tallmd:before:w-[50px] landscape:lg:tallmd:before:h-[50px] xs:w-[50px] xs:h-[50px] bg-white mr-[10px] md:mr-5 hover-hover:hover:bg-none before:content-[''] before:w-[40px] before:h-[40px] before:rounded-full before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover-hover:hover:before:opacity-0 landscape:before:w-10 landscape:before:h-10 xs:before:w-[50px] landscape:md:tallmd:w-[50px] landscape:md:tallmd:h-[50px] landscape:md:tallmd:before:w-[50px] landscape:md:tallmd:before:h-[50px] xs:before:h-[50px]">
             <svg width="16" height="16" class="absolut z-10 hover-hover:group-hover:fill-[url(#first-gradient)] fill-white">
               <linearGradient id="first-gradient" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
                 <stop stop-color="#E58BB2"/>
@@ -285,22 +288,22 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="img/trainer-1.png" alt="Тренер Максим Казаков" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img src="img/trainer-1.png" width="397" height="803" alt="Тренер Максим Казаков" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-2.png" alt="Тренер Юлия Зырянова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img src="img/trainer-2.png" width="397" height="803" alt="Тренер Юлия Зырянова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-3.png" alt="Тренер Настя Антипова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img src="img/trainer-3.png" width="397" height="803" alt="Тренер Настя Антипова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-4.png" alt="Тренер Ольга Ветрова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img src="img/trainer-4.png" width="397" height="803" alt="Тренер Ольга Ветрова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-5.png" alt="Тренер Катя Стреженова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img src="img/trainer-5.png" width="397" height="803" alt="Тренер Катя Стреженова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-6.png" alt="Тренер Мария Жукова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img src="img/trainer-6.png" width="397" height="803" alt="Тренер Мария Жукова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
               </ul>
             </div>

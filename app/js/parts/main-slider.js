@@ -24,6 +24,7 @@ let currentSlideTitle = document.querySelector(".current-slide-title");
 let prevNextSlideTitle = document.querySelector(".next-prev-slider-title");
 let siteMenuLinks = document.querySelectorAll(".site-menu-link");
 let siteMenuLinksActive = Array.from(siteMenuLinks[0].classList).join(" ");
+let isMapLoaded = false;
 
 
 function activateMenuLink(slideIndex ,links, itemClass) {
@@ -91,6 +92,11 @@ mainSlider.on("active", (el) => {
   } else {
     nextPrevSliderButtonIcon.classList.add("rotate-180");
     prevNextSlideTitle.textContent = "Вернуться";
+  }
+
+  if(currentSlideTitle.textContent == "Контакты" && !isMapLoaded) {
+    loadMap();
+    isMapLoaded = true;
   }
 
   activateMenuLink(el.index, siteMenuLinks, "text-black-50");
