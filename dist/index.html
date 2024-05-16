@@ -8,17 +8,16 @@
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <meta name="theme-color" content="#faf5f4"/>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=34aee372-ec8f-4fe4-a941-87d490ddd366&lang=ru_RU" defer></script>
   <link rel="preload", href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload", href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="libs/css/splide.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libs/css/splide.min.css" media="all">
+  <link rel="stylesheet" href="css/style.min.css" media="all">
 </head>
 <body class="p-0 w-full bg-dawn-pink font-sans [height:calc(var(--vh)*100)]">
   <div class="w-full">
     <header class="fixed z-10 overflow-hidden inset-x-0 inset-y-0 px-5 py-5 landscape:md:tallsm:px-5 landscape:md:tallsm:py-5 landscape:lg:tallmd:px-[30px] landscape:lg:tallmd:py-[30px] landscape:lg:tallsm:px-[30px] landscape:lg:tallsm:py-[30px] landscape:xl:tallmd:py-11 landscape:xl:tallmd:px-12 landscape:xxl:tallmd:px-[70px] landscape:xxl:tallmd:py-[50px] landscape:xxxl:talllg:px-[90px] landscape:xxxl:talllg:py-[70px] md:talllg:px-[30px] md:talllg:py-[30px] lg:tallmd:py-11 sm:tallmd:px-5 sm:tallmd:py-5 lg:tallmd:px-12 pointer-events-none">
   <div class="grid grid-cols-header grid-rows-header h-full border-2 border-black-10">
-    <button type="button" class="burger-button inline-flex items-center self-start justify-self-start h-6 pointer-events-auto col-start-1 col-end-2 row-start-1 row-end-1 z-20">
+    <button type="button" aria-label="Открыть меню сайта" class="burger-button inline-flex items-center self-start justify-self-start h-6 pointer-events-auto col-start-1 col-end-2 row-start-1 row-end-1 z-20">
       <span class="burger-button__icon w-6 h-6 relative">
         <span class="burger-button__dot absolute top-2/4 left-0 block w-[2px] h-[2px] bg-black opacity-100 transition-opacity duration-200 ease-linear before:content-[''] before:absolute before:left-0 before:top-[-7px] before:block before:w-[2px] before:h-[2px] before:bg-black before:opacity-100 before:transition-opacity before:duration-200 before:ease-linear after:content-[''] after:absolute after:left-0 after:top-[7px] after:block after:w-[2px] after:h-[2px] after:bg-black after:opacity-100 after:transition-opacity after:duration-200 after:ease-linear"></span>
         <span class="burger-button__line absolute top-1/2 left-1 block w-5 h-[2px] bg-tan-hide transition-[background-color] duration-200 ease-linear delay-200 before:content-[''] before:absolute before:top-[-7px] before:left-0 before:block before:w-5 before:h-[2px] before:bg-tan-hide before:transition-[top,transform] before:duration-[0.2s,0.2s] before:ease-[linear,linear] before:delay-[0.4s,0.2s] after:content-[''] after:absolute after:top-[7px] after:left-0 after:block after:w-3.5 after:h-[2px] after:bg-tan-hide after:transition-[width,top,transform] after:duration-[0.2s,0.2s,0.2s] after:ease-[linear,linear,linear] after:delay-[0.6s,0.4s,0.2s]"></span>
@@ -70,7 +69,7 @@
         <a href="#" class="pointer-events-auto uppercase text-[10px] transition-colors duration-200 ease-linear hover-hover:hover:text-tan-hide">tg</a>
       </li>
     </ul>
-    <button type="button" class="next-slide-button group flex items-center col-start-4 col-end-4 row-start-3 row-end-3 self-end justify-self-end pointer-events-auto md:col-start-1 md:col-end-1 md:row-start-3 md:row-end-3 md:justify-self-start xl:col-start-4 xl:col-end-4 xl:row-start-3 xl:row-end-3 xl:justify-self-end">
+    <button type="button" aria-label="Переключить слайд" class="next-slide-button group flex items-center col-start-4 col-end-4 row-start-3 row-end-3 self-end justify-self-end pointer-events-auto md:col-start-1 md:col-end-1 md:row-start-3 md:row-end-3 md:justify-self-start xl:col-start-4 xl:col-end-4 xl:row-start-3 xl:row-end-3 xl:justify-self-end">
       <span class="hidden group next-prev-slider-title mr-[22px] xl:inline">Направления и классы</span>
       <span class="next-slide-button__icon flex items-center justify-center w-[30px] h-[30px] relative rounded-full bg-white before:content-[''] before:absolute before:w-[30px] before:h-[30px] before:rounded-full before:top-0 before:left-0 before:bg-gradient-to-t before:from-tan-hide before:from-0% before:to-hot-pink before:to-100% before:transition-opacity before:duration-200 before:ease-linear hover-hover:group-hover:before:opacity-0">
         <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg" class="absolut z-10 hover-hover:group-hover:fill-[url(#theme-gradient)] fill-white transition-transform duration-200 ease-linear">
@@ -127,7 +126,7 @@
           <span class="direction-slider-pagination-runner inline-block relative self-start text-nowrap text-[18px] bg-gradient-to-t from-tan-hide from-0% to-hot-pink to-100% text-transparent bg-clip-text mb-[20px] transition-top duration-200 ease-linear lg:tallsm:hidden lg:tallmd:inline-block lg:tallxl:inline-block xxl:tallmd:inline-block xxxl:talllg:text-nowrap landscape:xl:tallmd:inline-block">Yoga &mdash;</span>
           <div class="direction-slider-pagination flex flex-col items-start px-[9px] md:grow-0 md:shrink lg:tallsm:hidden lg:tallmd:flex lg:tallxl:flex xxl:tallmd:flex xxxl:talllg:shrink-0 landscape:xl:tallmd:flex"></div>
         </div>
-        <img src="img/directions-image.png" class="block object-contain md:self-end md:w-[213px] md:h-[500px] md:tallsm:w-[180px] md:tallsm:h-[422px] lg:tallsm:w-[160px] lg:tallsm:h-[375px] lg:tallxl:self-end lg:tallsm:block xl:tallmd:w-[220px] xl:tallmd:h-[516px] xxl:tallmd:w-[300px] xxl:tallmd:h-[704px] xxxl:tallmd:w-[268px] xxxl:tallmd:h-[630px] xxxl:talllg:w-[372px] xxxl:talllg:h-[873px]" alt="">
+        <img data-splide-lazy="img/directions-image.png"  class="block object-contain md:self-end md:w-[213px] md:h-[500px] md:tallsm:w-[180px] md:tallsm:h-[422px] lg:tallsm:w-[160px] lg:tallsm:h-[375px] lg:tallxl:self-end lg:tallsm:block xl:tallmd:w-[220px] xl:tallmd:h-[516px] xxl:tallmd:w-[300px] xxl:tallmd:h-[704px] xxxl:tallmd:w-[268px] xxxl:tallmd:h-[630px] xxxl:talllg:w-[372px] xxxl:talllg:h-[873px]" alt="">
       </div>
       <div class="col w-full md:w-[61.67%] landscape:md:tallxs:w-[65%] landscape:lg:tallmd:w-1/2 landscape:xl:tallmd:self-start landscape:xl:tallmd:mt-[20px] landscape:md:tallxxs:w-[70%] xxl:tallmd:w-6/12 landscape:xxl:tallmd:mt-[70px] landscape:xxxl:talllg:mt-[120px]">
         <section class="splide directions-slider xl:tallmd:w-[520px]" aria-labelledby="directions-slider-title">
@@ -211,7 +210,7 @@
   <div class="promo flex justify-center [height:calc(var(--vh)*100)] px-5 pt-6 pb-6 landscape:px-5 landscape:md:tallsm:px-[20px] landscape:md:tallsm:py-[20px] landscape:lg:tallmd:px-[30px] landscape:xl:tallmd:px-[48px] landscape:xxl:tallmd:px-[70px] landscape:xxxl:talllg:px-[90px] landscape:lg:tallmd:py-[44px] landscape:sm:tallsm:py-[20px] landscape:sm:tallsm:px-[20px] xs:tallsm:py-20 sm:px-[20px] md:justify-start lg:talllg:justify-center lg:px-16 xl:px-[170px] xxl:px-[250px] md:talllg:px-[30px] md:tallxl:justify-center lg:tallsm:justify-center xxl:pt-18 xxl:pb-18 tallsm:py-24">
     <div class="flex flex-col items-center max-w-mw justify-center landscape:md:tallxs:w-full landscape:md:tallsm:justify-center landscape:md:tallxxs:w-full landscape:md:tallmd:flex-row md:flex-row-reverse md:justify-end lg:flex-row">
       <div class="promo-image-wrapper hidden landscape:md:tallxs:hidden landscape:lg:tallmd:block landscape:md:tallxxs:hidden landscape:lg:tallsm:block landscape:md:tallmd:block landscape:md:tallmd:mr-0 landscape:md:tallmd:basis-[50%] landscape:md:tallmd:pr-7 landscape:xl:tallmd:pr-14 landscape:xxl:tallmd:pr-24 md:block md:shrink-0 md:mb-0 md:pl-[6px] md:-mr-[107px] lg:mr-0 lg:pl-0 lg:pr-10 lg:basis-[50%] xxl:pr-[111px] md:tallxl:mr-0 md:tallxl:shrink xl:tallmd:pr-14 xxl:tallmd:pr-0 xxl:tallmd:mr-[50px] xxxl:tallmd:mr-[100px] xxxl:talllg:mr-[160px]">
-        <img src="img/promo-image.png" width="544" height="609" alt="Специальное предложение" aria-hidden="true" class="object-contain md:block md:w-[357px] md:h-[400px] lg:talllg:ml-auto lg:tallsm:w-[320px] lg:tallsm:h-[358px] lg:tallsm:ml-auto xl:tallmd:w-[350px] xl:tallmd:h-[392px] xxl:tallmd:w-[450px] xxl:tallmd:h-[504px] landscape:xxxl:talllg:w-[544px] landscape:xxxl:talllg:h-[609px] landscape:md:tallmd:ml-auto landscape:lg:tallmd:w-[400px] landscape:lg:tallmd:h-[448px] landscape:xxl:tallmd:w-[500px] landscape:xxl:tallmd:h-[560px]">
+        <img data-splide-lazy="img/promo-image.png" width="544" height="609" alt="Специальное предложение" aria-hidden="true" class="object-contain md:block md:w-[357px] md:h-[400px] lg:talllg:ml-auto lg:tallsm:w-[320px] lg:tallsm:h-[358px] lg:tallsm:ml-auto xl:tallmd:w-[350px] xl:tallmd:h-[392px] xxl:tallmd:w-[450px] xxl:tallmd:h-[504px] landscape:xxxl:talllg:w-[544px] landscape:xxxl:talllg:h-[609px] landscape:md:tallmd:ml-auto landscape:lg:tallmd:w-[400px] landscape:lg:tallmd:h-[448px] landscape:xxl:tallmd:w-[500px] landscape:xxl:tallmd:h-[560px]">
       </div>
       <div class="promo-text-content shrink-0 landscape:md:tallsm:grow-0 landscape:md:tallxs:grow landscape:md:tallxxs:grow landscape:md:tallmd:basis-[50%] md:basis-[435px] lg:basis-[50%]">
         <form action="#" method="post" class="max-w-[435px] landscape:md:tallxs:mx-auto landscape:md:tallxxs:mx-auto landscape:lg:tallmd:mx-0 landscape:lg:tallsm:mx-0 lg:tallsm:max-w-[410px] landscape:md:tallmd:max-w-[410px] landscape:md:tallmd:mx-0 landscape:xxl:tallmd:max-w-[435px] sm:tallsm:max-w-none xl:tallmd:max-w-[435px]">
@@ -288,22 +287,22 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="img/trainer-1.png" width="397" height="803" alt="Тренер Максим Казаков" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img data-splide-lazy="img/trainer-1.png" width="397" height="803" alt="Тренер Максим Казаков" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-2.png" width="397" height="803" alt="Тренер Юлия Зырянова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img data-splide-lazy="img/trainer-2.png" width="397" height="803" alt="Тренер Юлия Зырянова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-3.png" width="397" height="803" alt="Тренер Настя Антипова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img data-splide-lazy="img/trainer-3.png" width="397" height="803" alt="Тренер Настя Антипова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-4.png" width="397" height="803" alt="Тренер Ольга Ветрова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img data-splide-lazy="img/trainer-4.png" width="397" height="803" alt="Тренер Ольга Ветрова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-5.png" width="397" height="803" alt="Тренер Катя Стреженова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img data-splide-lazy="img/trainer-5.png" width="397" height="803" alt="Тренер Катя Стреженова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
                 <li class="splide__slide">
-                  <img src="img/trainer-6.png" width="397" height="803" alt="Тренер Мария Жукова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
+                  <img data-splide-lazy="img/trainer-6.png" width="397" height="803" alt="Тренер Мария Жукова" class="block object-contain md:self-end lg:tallxl:self-center lg:tallsm:block">
                 </li>
               </ul>
             </div>
@@ -370,7 +369,7 @@
   <div class="subscriptions flex justify-start [height:calc(var(--vh)*100)] pl-5 pt-6 pb-6 landscape:pl-5 landscape:py-5 landscape:md:tallxs:justify-center landscape:tallxss-min-h-360:justify-center landscape:xl:talllg:py-11 landscape:xl:talllg:px-12 landscape:xl:talllg:justify-center landscape:sm:tallsm:pl-[20px] landscape:md:tallxxs:justify-center landscape:lg:tallmd:py-[44px] landscape:lg:tallmd:px-[30px] landscape:xl:tallmd:px-[48px] landscape:xxl:tallmd:px-[70px] landscape:xxxl:talllg:px-[90px] xs:tallsm:py-20 sm:pl-[20px] md:justify-start sm:tallmd:px-5 md:tallxl:justify-between md:talllg:px-[30px] lg:talllg:justify-center lg:px-16 lg:tallxl:px-[48px] xl:px-[170px] xl:tallmd:px-[140px] xxl:px-[250px] lg:tallsm:justify-center xxl:py-18 xxl:tallmd:py-[100px] xxl:tallmd:px-[180px] tallsm:py-24">
     <div class="flex flex-col items-center w-full max-w-mw justify-center landscape:tallxss-min-h-360:flex-row-reverse landscape:xl:tallmd:flex-row landscape:md:tallxs:justify-center landscape:lg:tallsm:flex-row landscape:lg:tallsm:justify-center landscape:lg:tallsm:grow landscape:lg:tallmd:justify-start landscape:md:tallmd:justify-center landscape:md:tallxxs:justify-center landscape:md:tallmd:flex-row md:flex-row-reverse md:justify-end lg:tallsm:flex-row-reverse lg:flex-row lg:tallxl:grow xl:tallmd:flex-row xl:tallmd:grow xl:tallmd:justify-center">
       <div class="subscriptions-image-wrapper hidden landscape:md:tallxs:static landscape:md:tallxs:pl-[30px] landscape:tallxss-min-h-360:block landscape:lg:tallmd:-mr-[120px] landscape:xl:tallmd:basis-[50%] landscape:xl:tallmd:p-0 landscape:xl:tallmd:ml-0 landscape:xl:tallmd:pr-14 landscape:md:tallxxs:static landscape:md:tallxxs:pl-[30px] landscape:lg:tallsm:pl-0 landscape:lg:tallsm:ml-0 landscape:lg:tallsm:basis-[50%] landscape:lg:tallsm:pr-14 landscape:md:tallmd:static landscape:md:tallmd:basis-[50%] landscape:xl:tallmd:mr-0 md:block md:shrink-0 md:mb-0 md:absolute md:right-[10px] md:tallxl:right-[30px] lg:tallxl:absolute lg:tallxl:right-[48px] lg:tallxl:translate-y-0 lg:mr-0 lg:pl-0 lg:pr-10 lg:basis-[50%] md:tallxl:mr-0 md:tallxl:shrink lg:tallsm:static lg:tallsm:translate-y-0 lg:tallsm:pr-0 lg:tallsm:ml-9 xl:tallmd:basis-[50%] xl:tallmd:ml-0 xl:tallmd:grow-0 xl:tallmd:mr-0 xl:tallmd:pr-14 xxxl:tallmd:pr-[188px]">
-        <img src="img/subscription-image.png" aria-hidden="true" class="object-contain block landscape:md:tallxs:w-[180px] landscape:md:tallxs:h-[270px] landscape:tallxss-min-h-360:w-[180px] landscape:tallxss-min-h-360:h-[270px] landscape:lg:tallmd:w-[334px] landscape:lg:tallmd:h-[500px] landscape:xl:tallmd:w-[400px] landscape:xl:tallmd:h-[599px] landscape:md:tallxxs:w-[160px] landscape:md:tallxxs:h-[240px] landscape:lg:tallsm:w-[250px] landscape:lg:tallsm:h-[374px] landscape:lg:tallsm:ml-auto landscape:md:tallmd:w-[334px] landscape:md:tallmd:h-[500px] md:w-[334px] md:h-[500px] md:tallxl:w-[400px] md:tallxl:h-[599px] lg:tallsm:w-[270px] lg:tallsm:h-[404px] lg:tallxl:w-[400px] lg:tallxl:h-[599px] xl:tallmd:ml-auto xl:tallmd:w-[300px] xl:tallmd:h-[449px] xxl:tallmd:w-[400px] xxl:tallmd:h-[599px] landscape:xxxl:talllg:w-[474px] landscape:xxxl:talllg:h-[710px]" alt="Абонементы">
+        <img data-splide-lazy="img/subscription-image.png" aria-hidden="true" class="object-contain block landscape:md:tallxs:w-[180px] landscape:md:tallxs:h-[270px] landscape:tallxss-min-h-360:w-[180px] landscape:tallxss-min-h-360:h-[270px] landscape:lg:tallmd:w-[334px] landscape:lg:tallmd:h-[500px] landscape:xl:tallmd:w-[400px] landscape:xl:tallmd:h-[599px] landscape:md:tallxxs:w-[160px] landscape:md:tallxxs:h-[240px] landscape:lg:tallsm:w-[250px] landscape:lg:tallsm:h-[374px] landscape:lg:tallsm:ml-auto landscape:md:tallmd:w-[334px] landscape:md:tallmd:h-[500px] md:w-[334px] md:h-[500px] md:tallxl:w-[400px] md:tallxl:h-[599px] lg:tallsm:w-[270px] lg:tallsm:h-[404px] lg:tallxl:w-[400px] lg:tallxl:h-[599px] xl:tallmd:ml-auto xl:tallmd:w-[300px] xl:tallmd:h-[449px] xxl:tallmd:w-[400px] xxl:tallmd:h-[599px] landscape:xxxl:talllg:w-[474px] landscape:xxxl:talllg:h-[710px]" alt="Абонементы">
       </div>
       <div class="subscriptions-table w-full [white-space:nowrap] md:max-w-[564px] md:relative md:z-10 xl:tallmd:max-w-[none] xl:tallmd:grow-0 lg:basis-[50%] landscape:md:tallxs:basis-[50%] landscape:xl:tallmd:basis-[50%] landscape:lg:tallsm:basis-[50%] landscape:md:tallmd:basis-[50%] landscape:tallxss-min-h-360:basis-[50%] landscape:md:tallxxs:basis-[50%] sm:tallmd:w-full">
         <h2 class="absolute overflow-hidden -margin-[1px] border-0 p-0 w-[1px] h-[1px] [clip:rect(0_0_0_0)]">Наши абонементы</h2>
@@ -570,7 +569,7 @@
           <div class="reviews-slider-pagination flex flex-col items-start px-[9px] md:grow-0 md:shrink xxl:tallmd:flex xxxl:talllg:shrink-0"></div>
         </div>
         <div class="reviews-image-wrapper landscape:lg:tallmd:absolute landscape:lg:tallmd:bottom-0 landscape:lg:tallmd:right-0 landscape:xl:tallmd:translate-y-0 landscape:xl:tallmd:right-[30px] landscape:xxl:tallmd:right-[38px] landscape:xxl:tallmd:translate-y-1/2 landscape:xxl:tallmd:bottom-1/2 md:talllg:absolute md:talllg:right-0 md:talllg:bottom-[70px] lg:tallxl:left-0 lg:tallxl:bottom-[-50%] md:tallxl:bottom-[-40%] xl:tallmd:absolute xl:tallmd:left-auto xl:tallmd:bottom-[50%] xl:tallmd:translate-y-1/2 xl:tallmd:right-[30px]">
-          <img src="img/reviews-main-image.png" class="block object-contain landscape:xl:tallmd:w-[554px] landscape:xl:tallmd:h-[500px] md:talllg:w-[554px] md:talllg:h-[500px] xl:tallmd:w-[400px] lg:tallxl:scale-x-[-1] xl:tallmd:h-[361px] landscape:xxl:tallmd:w-[600px] landscape:xxl:tallmd:h-[542px] landscape:xxxl:tallmd:w-[700px] landscape:xxxl:tallmd:h-[632px] landscape:xxxl:talllg:w-[795px] landscape:xxxl:talllg:h-[718px]" alt="">
+          <img data-splide-lazy="img/reviews-main-image.png" class="block object-contain landscape:xl:tallmd:w-[554px] landscape:xl:tallmd:h-[500px] md:talllg:w-[554px] md:talllg:h-[500px] xl:tallmd:w-[400px] lg:tallxl:scale-x-[-1] xl:tallmd:h-[361px] landscape:xxl:tallmd:w-[600px] landscape:xxl:tallmd:h-[542px] landscape:xxxl:tallmd:w-[700px] landscape:xxxl:tallmd:h-[632px] landscape:xxxl:talllg:w-[795px] landscape:xxxl:talllg:h-[718px]" alt="">
         </div>
       </div>
       <div class="reviews-right-col col w-full landscape:md:tallxs:w-[70%] landscape:lg:tallmd:w-1/2 landscape:md:tallxxs:w-[70%] landscape:md:tallmd:w-[61.67%] md:w-[61.67%] lg:tallsm:max-w-[80%] xl:tallmd:w-6/12">
@@ -706,7 +705,7 @@
   <div class="promo-2 flex justify-center [height:calc(var(--vh)*100)] px-5 pt-6 pb-6 landscape:px-5 landscape:md:tallsm:px-[20px] landscape:md:tallsm:py-[20px] landscape:lg:tallmd:px-[30px] landscape:lg:tallmd:py-[44px] landscape:sm:tallsm:py-[20px] landscape:sm:tallsm:px-[20px] landscape:xl:tallmd:px-[48px] landscape:xxl:tallmd:px-[70px] landscape:xxxl:talllg:px-[90px] xs:tallsm:py-20 sm:px-[20px] md:justify-start lg:talllg:justify-center md:talllg:px-[30px] lg:px-16 xl:px-[170px] xxl:px-[250px] md:tallxl:justify-center lg:tallsm:justify-center xxl:pt-18 xxl:pb-18 tallsm:py-24">
     <div class="flex flex-col items-center max-w-mw justify-center landscape:md:tallxs:w-full landscape:md:tallxxs:w-full landscape:md:tallsm:justify-center landscape:md:tallmd:flex-row md:flex-row-reverse md:justify-end lg:flex-row">
       <div class="promo-image-wrapper hidden landscape:md:tallxs:hidden landscape:lg:tallmd:block landscape:md:tallxxs:hidden landscape:lg:tallsm:block landscape:md:tallmd:block landscape:md:tallmd:mr-0 landscape:md:tallmd:basis-[50%] landscape:md:tallmd:pr-7 landscape:xl:tallmd:pr-14 landscape:xxl:tallmd:pr-24 md:block md:shrink-0 md:mb-0 md:pl-[6px] md:-mr-[107px] lg:mr-0 lg:pl-0 lg:pr-10 lg:basis-[50%] xxl:pr-[111px] md:tallxl:mr-0 md:tallxl:shrink xl:tallmd:pr-14 xxl:tallmd:pr-0 xxl:tallmd:mr-[50px] xxxl:tallmd:mr-[100px] xxxl:talllg:mr-[160px]">
-        <img src="img/promo-2-image.png" width="544" height="609" alt="Специальное предложение" aria-hidden="true" class="object-contain md:block md:w-[357px] md:h-[486px] lg:talllg:ml-auto lg:tallsm:w-[320px] lg:tallsm:h-[436px] lg:tallsm:ml-auto xl:tallmd:w-[350px] xl:tallmd:h-[477px] xxl:tallmd:w-[450px] xxl:tallmd:h-[613px] xxxl:talllg:w-[522px] xxxl:talllg:h-[711px]">
+        <img data-splide-lazy="img/promo-2-image.png" width="544" height="609" alt="Специальное предложение" aria-hidden="true" class="object-contain md:block md:w-[357px] md:h-[486px] lg:talllg:ml-auto lg:tallsm:w-[320px] lg:tallsm:h-[436px] lg:tallsm:ml-auto xl:tallmd:w-[350px] xl:tallmd:h-[477px] xxl:tallmd:w-[450px] xxl:tallmd:h-[613px] xxxl:talllg:w-[522px] xxxl:talllg:h-[711px]">
       </div>
       <div class="promo-text-content shrink-0 landscape:md:tallxs:grow landscape:md:tallxxs:grow landscape:md:tallsm:grow-0 landscape:md:tallmd:basis-[50%] md:basis-[435px] lg:basis-[50%]">
         <form action="#" method="post" class="relative max-w-[435px] landscape:md:tallxs:mx-auto landscape:md:tallxxs:mx-auto landscape:lg:tallmd:mx-0 landscape:lg:tallsm:mx-0 landscape:md:tallmd:max-w-[410px] landscape:md:tallmd:mx-0 landscape:xxl:tallmd:max-w-[437px] sm:tallsm:max-w-none lg:tallsm:max-w-[410px] xl:tallmd:max-w-[437px]">
@@ -864,6 +863,7 @@
   </div>
 
   <script src="libs/js/splide.min.js" defer></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=34aee372-ec8f-4fe4-a941-87d490ddd366&lang=ru_RU" defer></script> -->
   <script src="js/script.min.js" defer></script>
 </body>
 </html>

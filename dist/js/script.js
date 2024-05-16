@@ -27,22 +27,14 @@ window.addEventListener("DOMContentLoaded", () => {
     };
   }
   ;
-  function fixVh() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', "".concat(vh, "px"));
-  }
-  fixVh();
-  window.addEventListener("resize", () => {
-    fixVh();
-  });
-  ;
   let mainSlider = new Splide('.main-slider', {
     direction: 'ttb',
-    height: '100vh',
+    height: 'calc(var(--vh) * 100)',
     wheel: true,
     speed: 500,
     arrows: false,
-    pagination: false
+    pagination: false,
+    lazyLoad: 'nearby'
   });
   mainSlider.mount();
   window.addEventListener("resize", () => {
@@ -119,6 +111,15 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     activateMenuLink(el.index, siteMenuLinks, "text-black-50");
   });
+  function fixVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', "".concat(vh, "px"));
+  }
+  fixVh();
+  window.addEventListener("resize", () => {
+    fixVh();
+  });
+  ;
   const burgerButton = document.querySelector(".burger-button");
   const siteMenu = document.querySelector(".site-navigation");
   const siteMenuClassList = Array.from(siteMenu.classList).join(" ");
@@ -214,7 +215,8 @@ window.addEventListener("DOMContentLoaded", () => {
       pagination: false,
       gap: 30,
       perPage: 1,
-      rewind: true
+      rewind: true,
+      lazyLoad: 'nearby'
     });
     trainersPhotoSlider = new Splide(trainersPhotoSlider, {
       speed: 700,
@@ -429,11 +431,6 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
   ;
-  let copyrightYear = document.querySelector(".copyright-year");
-  if (copyrightYear) {
-    copyrightYear.textContent = new Date().getFullYear();
-  }
-  ;
   let contactsMap = document.querySelector("#contacts-map");
   let loadMap;
   if (contactsMap) {
@@ -474,6 +471,11 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       ymaps.ready(init);
     };
+  }
+  ;
+  let copyrightYear = document.querySelector(".copyright-year");
+  if (copyrightYear) {
+    copyrightYear.textContent = new Date().getFullYear();
   }
   ;
 });

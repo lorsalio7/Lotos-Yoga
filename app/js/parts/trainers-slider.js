@@ -9,6 +9,7 @@ if(trainersSlider) {
     gap: 30,
     perPage: 1,
     rewind : true,
+    lazyLoad: 'nearby'
   });
 
   trainersPhotoSlider = new Splide(trainersPhotoSlider, {

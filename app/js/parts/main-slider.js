@@ -1,10 +1,11 @@
 let mainSlider = new Splide('.main-slider', {
   direction: 'ttb',
-  height   : '100vh',
+  height   : 'calc(var(--vh) * 100)',
   wheel    : true,
   speed    : 500,
   arrows   : false,
-  pagination: false
+  pagination: false,
+  lazyLoad: 'nearby'
 });
 
 mainSlider.mount();
