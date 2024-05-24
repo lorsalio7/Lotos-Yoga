@@ -1,7 +1,6 @@
 let contactsMap = document.querySelector("#contacts-map");
 let loadMap;
 if(contactsMap) {
-
   loadMap = function () {
     document.cookie = 'sameSite=Strict';
     function init() {

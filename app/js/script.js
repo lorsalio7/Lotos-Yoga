@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
   @@include("parts/reviews-read-all.js");
   @@include("parts/fix-review-indentation.js");
   @@include("parts/review-form.js");
+  @@include("parts/add-maps-script-on-page.js");
   @@include("parts/contacts-map.js");
   @@include("parts/copyright-year.js");
 });
