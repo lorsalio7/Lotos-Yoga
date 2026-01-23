@@ -451,7 +451,7 @@ window.addEventListener("DOMContentLoaded", () => {
         });
         let placemark = new ymaps.Placemark([59.931765080896845, 30.35767835426295], {}, {
           iconLayout: "default#image",
-          iconImageHref: "img/pin-map.svg",
+          iconImageHref: "img/icons/pin-map.svg",
           iconImageSize: [49, 60],
           iconImageOffset: [-19, -44]
         });
